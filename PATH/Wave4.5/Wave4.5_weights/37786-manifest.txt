@@ -1,0 +1,174 @@
+File Manifest for ICPSR 37786
+
+United States Department of Health and Human Services. National Institutes
+of Health. National Institute on Drug Abuse, and United States Department
+of Health and Human Services. Food and Drug Administration. Center for
+Tobacco Products. Population Assessment of Tobacco and Health (PATH) Study
+[United States] Special Collection Public-Use Files. ICPSR37786-v1. Ann
+Arbor, MI: Inter-university Consortium for Political and Social Research
+[distributor], 2020-09-15. http://doi.org/10.3886/ICPSR37786.v1
+
+
+Study-level Documentation
+
+    Filename                            Record  Record    Var.    Date        MD5
+                                        Length  Count     Count   Updated     Checksum
+
+    37786-descriptioncitation.pdf       -       -         -       2020-09-15  -
+
+    37786-manifest.txt                  -       -         -       daily       -
+
+    37786-Documentation-Nonresponse_Report.pdf -       -         -       2020-09-15  9f6abcd95ce841a138ef7f924238b373
+
+    37786-Documentation-Tobacco_Brand.xlsx -       -         -       2020-09-15  57c1fb0b7480f158a59c2bece006dafc
+
+    37786-Documentation-Youth_Crosswalk.xlsx -       -         -       2020-09-15  9abbe12313cb8bfc48544aaf21855640
+
+    37786-User_guide.pdf                -       -         -       2020-09-15  227e3f962ad00f49f59a5f495a6f0ee0
+
+
+DS0001 Master Linkage File
+
+    Filename                            Record  Record    Var.    Date        MD5
+                                        Length  Count     Count   Updated     Checksum
+
+    37786-0001-Codebook.pdf             -       -         -       2020-09-15  62e0df15470d9eb501af4b1786066323
+
+    37786-0001-Data.dta                 -       67,276    18      2020-09-15  14ea2c4a136f47608dc9bdc0f9c22e5b
+
+    37786-0001-Data.rda                 -       67,276    18      2020-09-15  7a712b1133b568002715483aef3b37d5
+
+    37786-0001-Data.sav                 -       67,276    18      2020-09-15  20fdbe8505edd0e8c4b17cde5d87615c
+
+    37786-0001-Data.stc                 -       67,276    18      2020-09-15  1bdbc5c176b3670f85c845f3fed1beec
+
+    37786-0001-Data.tsv                 -       67,276    18      2020-09-15  83a76c937fbbca75ca96e1750f44b204
+
+    37786-0001-Data.txt                 31      67,276    18      2020-09-15  0055497211b01089e35c005cb7bdead1
+
+    37786-0001-Setup.dct                -       -         -       2020-09-15  6d6a49560a97312fd18239b8d0116cf3
+
+    37786-0001-Setup.do                 -       -         -       2020-09-15  de87b3363ebfdac36e401ed08b29e521
+
+    37786-0001-Setup.sas                -       -         -       2020-09-15  56e7bce0e38c2414bb28d6e6939fc13b
+
+    37786-0001-Setup.sps                -       -         -       2020-09-15  acbeef6b56f02b19afc425a9173678ad
+
+
+DS1002 Wave 4.5: Youth / Parent Questionnaire Data
+
+    Filename                            Record  Record    Var.    Date        MD5
+                                        Length  Count     Count   Updated     Checksum
+
+    37786-1002-Codebook.pdf             -       -         -       2020-09-15  7509ade0dce4382299729a8a7b24648e
+
+    37786-1002-Data.dta                 -       13,131    1395    2020-09-15  e5d701c117150e80dd8d8bda4606f815
+
+    37786-1002-Data.rda                 -       13,131    1395    2020-09-15  95184cdb7ad269409bd25feb3b406838
+
+    37786-1002-Data.sav                 -       13,131    1395    2020-09-15  c5fbc66a73986773cd43e6849a4d314f
+
+    37786-1002-Data.stc                 -       13,131    1395    2020-09-15  79e893d2ec4e4ee767557fc7ad00139f
+
+    37786-1002-Data.tsv                 -       13,131    1395    2020-09-15  d3a2ccec51482e260d53929c91fb71d8
+
+    37786-1002-Data.txt                 8689    13,131    1395    2020-09-15  59c190f53a0789745b9c510e2574d878
+
+    37786-1002-Questionnaire.pdf        -       -         -       2020-09-15  b9dc77f41472a9454af03e8554dea20e
+
+    37786-1002-Setup.dct                -       -         -       2020-09-15  a5aa25fd1675499f4b35ae97b19c6848
+
+    37786-1002-Setup.do                 -       -         -       2020-09-15  4cc693bd277d2a0b60779c7e4815576c
+
+    37786-1002-Setup.sas                -       -         -       2020-09-15  5e5e554fcb2bd1f6c1eb12293ba13dbe
+
+    37786-1002-Setup.sps                -       -         -       2020-09-15  c3dbda576729d36c51f6486bce1efc5d
+
+    37786-1002-Supplemental_syntax.do   -       -         -       2020-09-15  4f14a529f62764ebbf0aeeb30a0b7580
+
+    37786-1002-Supplemental_syntax.sas  -       -         -       2020-09-15  6f97edd7a97c51b9370f60d22faaa6b1
+
+
+DS1112 Wave 4.5: Youth / Parent - Wave 1 Cohort All-Waves Weights
+
+    Filename                            Record  Record    Var.    Date        MD5
+                                        Length  Count     Count   Updated     Checksum
+
+    37786-1112-Codebook.pdf             -       -         -       2020-09-15  10ca5cd471025f2f28e2e58df0c86f59
+
+    37786-1112-Data.dta                 -       8,202     105     2020-09-15  2269122b54c5bd47d315df906168cbe0
+
+    37786-1112-Data.rda                 -       8,202     105     2020-09-15  74583318288d1b3ee58984168260c951
+
+    37786-1112-Data.sav                 -       8,202     105     2020-09-15  bb278e7591c339dd1b723ddad95577f7
+
+    37786-1112-Data.stc                 -       8,202     105     2020-09-15  309ab44b721a272928f20c6fd7ef1e41
+
+    37786-1112-Data.tsv                 -       8,202     105     2020-09-15  57e70614763afa6d8dda979c065b1838
+
+    37786-1112-Data.txt                 1532    8,202     105     2020-09-15  d733484bdb62c6401ebe00737517cb68
+
+    37786-1112-Setup.dct                -       -         -       2020-09-15  6831e2b0c385f06d55ce47c4ca3eabb5
+
+    37786-1112-Setup.do                 -       -         -       2020-09-15  a0684a1508d053292d1cb47232098474
+
+    37786-1112-Setup.sas                -       -         -       2020-09-15  e752e218f0a4898b9ae0606281c11e56
+
+    37786-1112-Setup.sps                -       -         -       2020-09-15  a38ffc717a448da7ed00525866c43069
+
+
+DS1212 Wave 4.5: Youth / Parent - Wave 1 Cohort Single-Wave Weights
+
+    Filename                            Record  Record    Var.    Date        MD5
+                                        Length  Count     Count   Updated     Checksum
+
+    37786-1212-Codebook.pdf             -       -         -       2020-09-15  76e046ec0bd8824bc9cef9e865ab6b98
+
+    37786-1212-Data.dta                 -       3,581     105     2020-09-15  a6d270706ac623b1e8dfb9d29a442ef0
+
+    37786-1212-Data.rda                 -       3,581     105     2020-09-15  68c4a21ea32bc283b19b5b194929b263
+
+    37786-1212-Data.sav                 -       3,581     105     2020-09-15  11e81f2cd21b62c64ef498a3a3f632b3
+
+    37786-1212-Data.stc                 -       3,581     105     2020-09-15  726e1ba2c9ada5adf74edb1c741f68b2
+
+    37786-1212-Data.tsv                 -       3,581     105     2020-09-15  a37d4a34cd8dedd3cfac0fc1377bb22e
+
+    37786-1212-Data.txt                 1532    3,581     105     2020-09-15  99b8bb4c69f5aa12e35f34a7d9789ccb
+
+    37786-1212-Setup.dct                -       -         -       2020-09-15  23f5f9e41b1925b6a65f24b2a0c32a28
+
+    37786-1212-Setup.do                 -       -         -       2020-09-15  ee4524ea84ac43224fb481258e0291fd
+
+    37786-1212-Setup.sas                -       -         -       2020-09-15  d0325444921a511915d7e28673a4e173
+
+    37786-1212-Setup.sps                -       -         -       2020-09-15  ccdab3b75cd67e6fce7e9ee6de2b1d95
+
+
+DS1222 Wave 4.5: Youth / Parent - Wave 4 Cohort Single-Wave Weights
+
+    Filename                            Record  Record    Var.    Date        MD5
+                                        Length  Count     Count   Updated     Checksum
+
+    37786-1222-Codebook.pdf             -       -         -       2020-09-15  547bec206417bff103d2558c6d5f2bed
+
+    37786-1222-Data.dta                 -       12,918    105     2020-09-15  b1caad8bfa8a92c63f79f80928533d17
+
+    37786-1222-Data.rda                 -       12,918    105     2020-09-15  525620ee02e2829b71268f83a8ef62df
+
+    37786-1222-Data.sav                 -       12,918    105     2020-09-15  e871db4f1b5b703676db54da0db1fbf7
+
+    37786-1222-Data.stc                 -       12,918    105     2020-09-15  685d574d91c04047886dbc0ee20ba744
+
+    37786-1222-Data.tsv                 -       12,918    105     2020-09-15  2cb49655e6a2f599b5938911ede44ead
+
+    37786-1222-Data.txt                 1533    12,918    105     2020-09-15  8fb619ae4b9ef3cd901575a9d52a5b96
+
+    37786-1222-Setup.dct                -       -         -       2020-09-15  042827ff006fecf1e9efbe240153bfae
+
+    37786-1222-Setup.do                 -       -         -       2020-09-15  e7bffc340f028164693a217f17c08622
+
+    37786-1222-Setup.sas                -       -         -       2020-09-15  50dfe1eb78b49b06bd1bc59209871c3b
+
+    37786-1222-Setup.sps                -       -         -       2020-09-15  c16122b7be7ed2b194c972ed0327d65b
+

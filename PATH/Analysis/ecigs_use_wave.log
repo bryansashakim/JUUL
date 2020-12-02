@@ -1,0 +1,521 @@
+--------------------------------------------------------------------------------
+      name:  <unnamed>
+       log:  /homes/nber/kimcwa/Documents/E-cigarettes/JUUL/PATH_ANALYSIS/ecigs_
+> use_wave.log
+  log type:  text
+ opened on:  13 Oct 2020, 23:58:06
+
+. 
+. 
+. // Wave 1 - All
+. use "/disk/homedirs/nber/kimcwa/Documents/E-cigarettes/JUUL/PATH_ANALYSIS/wave
+> 1.dta", clear
+(Written by R.              )
+
+. drop if Ever_Used_ECIGS == -97777 | Ever_Used_ECIGS == -8 | Ever_Used_ECIGS ==
+>  -7
+(22 observations deleted)
+
+. tab Ever_Used_ECIGS wave [iweight=R03], column
+
++-------------------+
+| Key               |
+|-------------------|
+|     frequency     |
+| column percentage |
++-------------------+
+
+Ever_Used_ |    wave
+     ECIGS |         1 |     Total
+-----------+-----------+----------
+         1 | 2644471.7 | 2644471.7 
+           |     11.92 |     11.92 
+-----------+-----------+----------
+         2 |19,535,190 |19,535,190 
+           |     88.08 |     88.08 
+-----------+-----------+----------
+     Total |22,179,662 |22,179,662 
+           |    100.00 |    100.00 
+
+. // Wave 1 - Continuing population
+. use "/disk/homedirs/nber/kimcwa/Documents/E-cigarettes/JUUL/PATH_ANALYSIS/wave
+> 1.dta", clear
+(Written by R.              )
+
+. merge 1:1 PERSONID using "/disk/homedirs/nber/kimcwa/Documents/E-cigarettes/JU
+> UL/PATH_ANALYSIS/wave2.dta" 
+
+    Result                           # of obs.
+    -----------------------------------------
+    not matched                         5,661
+        from master                     3,570  (_merge==1)
+        from using                      2,091  (_merge==2)
+
+    matched                            10,081  (_merge==3)
+    -----------------------------------------
+
+. keep if _m == 3
+(5,661 observations deleted)
+
+. drop if Ever_Used_ECIGS == -97777 | Ever_Used_ECIGS == -8 | Ever_Used_ECIGS ==
+>  -7
+(18 observations deleted)
+
+. tab Ever_Used_ECIGS wave [iweight=R03], column
+
++-------------------+
+| Key               |
+|-------------------|
+|     frequency     |
+| column percentage |
++-------------------+
+
+Ever_Used_ |    wave
+     ECIGS |         1 |     Total
+-----------+-----------+----------
+         1 | 1491199.5 | 1491199.5 
+           |      9.33 |      9.33 
+-----------+-----------+----------
+         2 |14,499,176 |14,499,176 
+           |     90.67 |     90.67 
+-----------+-----------+----------
+     Total |15,990,375 |15,990,375 
+           |    100.00 |    100.00 
+
+. 
+. // Wave 2 - All
+. use "/disk/homedirs/nber/kimcwa/Documents/E-cigarettes/JUUL/PATH_ANALYSIS/wave
+> 2.dta", clear
+(Written by R.              )
+
+. drop if Ever_Used_ECIGS == -97777 | Ever_Used_ECIGS == -8 | Ever_Used_ECIGS ==
+>  -7
+(26 observations deleted)
+
+. tab Ever_Used_ECIGS wave [iweight=R03], column
+
++-------------------+
+| Key               |
+|-------------------|
+|     frequency     |
+| column percentage |
++-------------------+
+
+Ever_Used_ |    wave
+     ECIGS |         2 |     Total
+-----------+-----------+----------
+         1 | 3975416.7 | 3975416.7 
+           |     16.68 |     16.68 
+-----------+-----------+----------
+         2 |19,861,333 |19,861,333 
+           |     83.32 |     83.32 
+-----------+-----------+----------
+     Total |23,836,749 |23,836,749 
+           |    100.00 |    100.00 
+
+. // Wave 2 - Also Wave 1
+. use "/disk/homedirs/nber/kimcwa/Documents/E-cigarettes/JUUL/PATH_ANALYSIS/wave
+> 2.dta", clear
+(Written by R.              )
+
+. merge 1:1 PERSONID using "/disk/homedirs/nber/kimcwa/Documents/E-cigarettes/JU
+> UL/PATH_ANALYSIS/wave1.dta" 
+
+    Result                           # of obs.
+    -----------------------------------------
+    not matched                         5,661
+        from master                     2,091  (_merge==1)
+        from using                      3,570  (_merge==2)
+
+    matched                            10,081  (_merge==3)
+    -----------------------------------------
+
+. * keep if matched and youth is of continuing type (1)
+. keep if _m == 3 & youth_type == 1
+(5,661 observations deleted)
+
+. drop if Ever_Used_ECIGS == -97777 | Ever_Used_ECIGS == -8 | Ever_Used_ECIGS ==
+>  -7
+(23 observations deleted)
+
+. tab Ever_Used_ECIGS wave [iweight=R03], column
+
++-------------------+
+| Key               |
+|-------------------|
+|     frequency     |
+| column percentage |
++-------------------+
+
+Ever_Used_ |    wave
+     ECIGS |         2 |     Total
+-----------+-----------+----------
+         1 | 3842927.1 | 3842927.1 
+           |     18.74 |     18.74 
+-----------+-----------+----------
+         2 |16,666,765 |16,666,765 
+           |     81.26 |     81.26 
+-----------+-----------+----------
+     Total |20,509,692 |20,509,692 
+           |    100.00 |    100.00 
+
+. // Wave 2 - Also Wave 3
+. use "/disk/homedirs/nber/kimcwa/Documents/E-cigarettes/JUUL/PATH_ANALYSIS/wave
+> 2.dta", clear
+(Written by R.              )
+
+. merge 1:1 PERSONID using "/disk/homedirs/nber/kimcwa/Documents/E-cigarettes/JU
+> UL/PATH_ANALYSIS/wave3.dta" 
+
+    Result                           # of obs.
+    -----------------------------------------
+    not matched                         4,902
+        from master                     2,630  (_merge==1)
+        from using                      2,272  (_merge==2)
+
+    matched                             9,542  (_merge==3)
+    -----------------------------------------
+
+. * keep if matched 
+. keep if _m == 3
+(4,902 observations deleted)
+
+. drop if Ever_Used_ECIGS == -97777 | Ever_Used_ECIGS == -8 | Ever_Used_ECIGS ==
+>  -7
+(23 observations deleted)
+
+. tab Ever_Used_ECIGS wave [iweight=R03], column
+
++-------------------+
+| Key               |
+|-------------------|
+|     frequency     |
+| column percentage |
++-------------------+
+
+Ever_Used_ |    wave
+     ECIGS |         2 |     Total
+-----------+-----------+----------
+         1 | 2,443,936 | 2,443,936 
+           |     13.25 |     13.25 
+-----------+-----------+----------
+         2 |15,999,652 |15,999,652 
+           |     86.75 |     86.75 
+-----------+-----------+----------
+     Total |18,443,588 |18,443,588 
+           |    100.00 |    100.00 
+
+. // Wave 2 - Also Wave 4
+. use "/disk/homedirs/nber/kimcwa/Documents/E-cigarettes/JUUL/PATH_ANALYSIS/wave
+> 2.dta", clear
+(Written by R.              )
+
+. merge 1:1 PERSONID using "/disk/homedirs/nber/kimcwa/Documents/E-cigarettes/JU
+> UL/PATH_ANALYSIS/wave4.dta" 
+
+    Result                           # of obs.
+    -----------------------------------------
+    not matched                        12,376
+        from master                     4,875  (_merge==1)
+        from using                      7,501  (_merge==2)
+
+    matched                             7,297  (_merge==3)
+    -----------------------------------------
+
+. * keep if matched 
+. keep if _m == 3
+(12,376 observations deleted)
+
+. drop if Ever_Used_ECIGS == -97777 | Ever_Used_ECIGS == -8 | Ever_Used_ECIGS ==
+>  -7
+(17 observations deleted)
+
+. tab Ever_Used_ECIGS wave [iweight=R03], column
+
++-------------------+
+| Key               |
+|-------------------|
+|     frequency     |
+| column percentage |
++-------------------+
+
+Ever_Used_ |    wave
+     ECIGS |         2 |     Total
+-----------+-----------+----------
+         1 | 1,431,104 | 1,431,104 
+           |     10.34 |     10.34 
+-----------+-----------+----------
+         2 |12,404,413 |12,404,413 
+           |     89.66 |     89.66 
+-----------+-----------+----------
+     Total |13,835,517 |13,835,517 
+           |    100.00 |    100.00 
+
+. 
+. 
+. // Wave 3 - All
+. use "/disk/homedirs/nber/kimcwa/Documents/E-cigarettes/JUUL/PATH_ANALYSIS/wave
+> 3.dta", clear
+(Written by R.              )
+
+. drop if Ever_Used_ECIGS == -97777 | Ever_Used_ECIGS == -8 | Ever_Used_ECIGS ==
+>  -7
+(26 observations deleted)
+
+. tab Ever_Used_ECIGS wave [iweight=R03], column
+
++-------------------+
+| Key               |
+|-------------------|
+|     frequency     |
+| column percentage |
++-------------------+
+
+Ever_Used_ |    wave
+     ECIGS |         3 |     Total
+-----------+-----------+----------
+         1 | 2111419.4 | 2111419.4 
+           |      8.54 |      8.54 
+-----------+-----------+----------
+         2 |22,622,139 |22,622,139 
+           |     91.46 |     91.46 
+-----------+-----------+----------
+     Total |24,733,558 |24,733,558 
+           |    100.00 |    100.00 
+
+. // Wave 3 - Also Wave 2
+. use "/disk/homedirs/nber/kimcwa/Documents/E-cigarettes/JUUL/PATH_ANALYSIS/wave
+> 3.dta", clear
+(Written by R.              )
+
+. merge 1:1 PERSONID using "/disk/homedirs/nber/kimcwa/Documents/E-cigarettes/JU
+> UL/PATH_ANALYSIS/wave2.dta" 
+
+    Result                           # of obs.
+    -----------------------------------------
+    not matched                         4,902
+        from master                     2,272  (_merge==1)
+        from using                      2,630  (_merge==2)
+
+    matched                             9,542  (_merge==3)
+    -----------------------------------------
+
+. * keep if matched and youth is of continuing type (1)
+. keep if _m == 3 & youth_type == 1
+(4,902 observations deleted)
+
+. drop if Ever_Used_ECIGS == -97777 | Ever_Used_ECIGS == -8 | Ever_Used_ECIGS ==
+>  -7
+(18 observations deleted)
+
+. tab Ever_Used_ECIGS wave [iweight=R03], column
+
++-------------------+
+| Key               |
+|-------------------|
+|     frequency     |
+| column percentage |
++-------------------+
+
+Ever_Used_ |    wave
+     ECIGS |         3 |     Total
+-----------+-----------+----------
+         1 | 1975195.5 | 1975195.5 
+           |      9.85 |      9.85 
+-----------+-----------+----------
+         2 |18,071,303 |18,071,303 
+           |     90.15 |     90.15 
+-----------+-----------+----------
+     Total |20,046,499 |20,046,499 
+           |    100.00 |    100.00 
+
+. // Wave 3 - Also Wave 4
+. use "/disk/homedirs/nber/kimcwa/Documents/E-cigarettes/JUUL/PATH_ANALYSIS/wave
+> 3.dta", clear
+(Written by R.              )
+
+. merge 1:1 PERSONID using "/disk/homedirs/nber/kimcwa/Documents/E-cigarettes/JU
+> UL/PATH_ANALYSIS/wave4.dta" 
+
+    Result                           # of obs.
+    -----------------------------------------
+    not matched                         8,298
+        from master                     2,657  (_merge==1)
+        from using                      5,641  (_merge==2)
+
+    matched                             9,157  (_merge==3)
+    -----------------------------------------
+
+. * keep if matched 
+. keep if _m == 3 
+(8,298 observations deleted)
+
+. drop if Ever_Used_ECIGS == -97777 | Ever_Used_ECIGS == -8 | Ever_Used_ECIGS ==
+>  -7
+(19 observations deleted)
+
+. tab Ever_Used_ECIGS wave [iweight=R03], column
+
++-------------------+
+| Key               |
+|-------------------|
+|     frequency     |
+| column percentage |
++-------------------+
+
+Ever_Used_ |    wave
+     ECIGS |         3 |     Total
+-----------+-----------+----------
+         1 | 1294304.6 | 1294304.6 
+           |      6.80 |      6.80 
+-----------+-----------+----------
+         2 |17,726,133 |17,726,133 
+           |     93.20 |     93.20 
+-----------+-----------+----------
+     Total |19,020,437 |19,020,437 
+           |    100.00 |    100.00 
+
+. 
+. // Wave 4 - All
+. use "/disk/homedirs/nber/kimcwa/Documents/E-cigarettes/JUUL/PATH_ANALYSIS/wave
+> 4.dta", clear
+(Written by R.              )
+
+. drop if Ever_Used_ECIGS == -97777 | Ever_Used_ECIGS == -8 | Ever_Used_ECIGS ==
+>  -7
+(27 observations deleted)
+
+. tab Ever_Used_ECIGS wave [iweight=R04], column
+
++-------------------+
+| Key               |
+|-------------------|
+|     frequency     |
+| column percentage |
++-------------------+
+
+Ever_Used_ |    wave
+     ECIGS |         4 |     Total
+-----------+-----------+----------
+         1 | 2140309.4 | 2140309.4 
+           |      8.63 |      8.63 
+-----------+-----------+----------
+         2 |22,664,753 |22,664,753 
+           |     91.37 |     91.37 
+-----------+-----------+----------
+     Total |24,805,062 |24,805,062 
+           |    100.00 |    100.00 
+
+. // Wave 4 - Also Wave 3
+. use "/disk/homedirs/nber/kimcwa/Documents/E-cigarettes/JUUL/PATH_ANALYSIS/wave
+> 4.dta", clear
+(Written by R.              )
+
+. merge 1:1 PERSONID using "/disk/homedirs/nber/kimcwa/Documents/E-cigarettes/JU
+> UL/PATH_ANALYSIS/wave3.dta" 
+
+    Result                           # of obs.
+    -----------------------------------------
+    not matched                         8,298
+        from master                     5,641  (_merge==1)
+        from using                      2,657  (_merge==2)
+
+    matched                             9,157  (_merge==3)
+    -----------------------------------------
+
+. * keep if matched and youth is of continuing type (1)
+. keep if _m == 3 & youth_type == 1
+(8,298 observations deleted)
+
+. * create new weight variable to incorporate wave 4 cross-sectional weights
+. gen wt = R03
+
+. replace wt = R04 if wt == .
+(0 real changes made)
+
+. drop if Ever_Used_ECIGS == -97777 | Ever_Used_ECIGS == -8 | Ever_Used_ECIGS ==
+>  -7
+(16 observations deleted)
+
+. tab Ever_Used_ECIGS wave [iweight=wt], column
+
++-------------------+
+| Key               |
+|-------------------|
+|     frequency     |
+| column percentage |
++-------------------+
+
+Ever_Used_ |    wave
+     ECIGS |         4 |     Total
+-----------+-----------+----------
+         1 | 1676947.3 | 1676947.3 
+           |      8.81 |      8.81 
+-----------+-----------+----------
+         2 |17,350,038 |17,350,038 
+           |     91.19 |     91.19 
+-----------+-----------+----------
+     Total |19,026,985 |19,026,985 
+           |    100.00 |    100.00 
+
+. // Wave 4 - Also Wave 3
+. use "/disk/homedirs/nber/kimcwa/Documents/E-cigarettes/JUUL/PATH_ANALYSIS/wave
+> 4.dta", clear
+(Written by R.              )
+
+. merge 1:1 PERSONID using "/disk/homedirs/nber/kimcwa/Documents/E-cigarettes/JU
+> UL/PATH_ANALYSIS/wave3.dta" 
+
+    Result                           # of obs.
+    -----------------------------------------
+    not matched                         8,298
+        from master                     5,641  (_merge==1)
+        from using                      2,657  (_merge==2)
+
+    matched                             9,157  (_merge==3)
+    -----------------------------------------
+
+. * keep if matched and youth is of continuing type (1)
+. keep if _m == 3 & youth_type == 1
+(8,298 observations deleted)
+
+. * create new weight variable to incorporate wave 4 cross-sectional weights
+. gen wt = R03
+
+. replace wt = R04 if wt == .
+(0 real changes made)
+
+. drop if Ever_Used_ECIGS == -97777 | Ever_Used_ECIGS == -8 | Ever_Used_ECIGS ==
+>  -7
+(16 observations deleted)
+
+. tab Ever_Used_ECIGS wave [iweight=wt], column
+
++-------------------+
+| Key               |
+|-------------------|
+|     frequency     |
+| column percentage |
++-------------------+
+
+Ever_Used_ |    wave
+     ECIGS |         4 |     Total
+-----------+-----------+----------
+         1 | 1676947.3 | 1676947.3 
+           |      8.81 |      8.81 
+-----------+-----------+----------
+         2 |17,350,038 |17,350,038 
+           |     91.19 |     91.19 
+-----------+-----------+----------
+     Total |19,026,985 |19,026,985 
+           |    100.00 |    100.00 
+
+. 
+. 
+. log close
+      name:  <unnamed>
+       log:  /homes/nber/kimcwa/Documents/E-cigarettes/JUUL/PATH_ANALYSIS/ecigs_
+> use_wave.log
+  log type:  text
+ closed on:  13 Oct 2020, 23:58:07
+--------------------------------------------------------------------------------

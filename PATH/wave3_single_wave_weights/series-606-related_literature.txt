@@ -1,0 +1,454 @@
+Bibliography
+Population Assessment of Tobacco and Health (PATH) Study Series
+
+This bibliography includes published and unpublished works that are
+related to ICPSR series 606. It includes works that are based on
+primary or secondary analysis of the data, or which describe or critique
+those data or the collection methodology. This list represents all items
+known to ICPSR as of 2019-05-21.
+
+If you publish a work or know of other works that are based on these data,
+please send the complete citation and name of the ICPSR series used to:
+icpsr-biblio-notify@umich.edu 
+
+
+1. Ambrose, Bridget K.; Day, Hannah R.; Rostron, Brian; Conway, Kevin P.;
+Borek, Nicolette; Hyland, Andrew; Villanti, Andrea C., "Flavored tobacco
+product use among us youth aged 12-17 years, 2013-2014." JAMA, The Journal
+of the American Medical Association. Nov 3, 2015, 314, (17), 1871 - 1873.
+DOI: 10.1001/jama.2015.13802
+
+2. Bhatta, D.; Glantz, S.A., "Electronic cigarette use and myocardial
+infarction among adults in the United States Population Assessment of
+Tobacco and Health." Presented at the 2019 Annual Meeting of Society for
+Research on Nicotine and Tobacco, Society for Research on Nicotine and
+Tobacco, San Francisco, CA, Feb 20-23, 2019.
+Full text PDF: https://cdn.ymaws.com/www.srnt.org/resource/resmgr/SRNT19_Abstracts.pdf
+
+3. Bhatta, D.; Glantz, S.A., "Electronic cigarette use is associated with
+respiratory disease among adults in the United States Population Assessment
+of Tobacco and Health: A longitudinal analysis." Presented at the 2019
+Annual Meeting of Society for Research on Nicotine and Tobacco, Society for
+Research on Nicotine and Tobacco, San Francisco, CA, Feb 22-23, 2019.
+Full text PDF: https://cdn.ymaws.com/www.srnt.org/resource/resmgr/SRNT19_Abstracts.pdf
+
+4. Chaffee, Benjamin W.; Cheng, Jing, "Tobacco product initiation is
+correlated with cross-product changes in tobacco harm perception and
+susceptibility: Longitudinal analysis of the Population Assessment of
+Tobacco and Health youth cohort." Preventive Medicine. Sep 2018, 114, 72 -
+78. DOI: 10.1016/j.ypmed.2018.06.008
+Full text PDF: https://cdn.ymaws.com/www.srnt.org/resource/resmgr/SRNT19_Abstracts.pdf
+
+5. Chen, Cen, "An Investigation of the Predictors and Perceptions of
+Flavored E-Cigarette Use and Local Flavored E-Cigarette Sales Restrictions
+in the United States." Dissertation, University of Maryland, 2018. DOI:
+10.13016/M2BC3T121
+Full text PDF: https://cdn.ymaws.com/www.srnt.org/resource/resmgr/SRNT19_Abstracts.pdf
+
+6. Cheng, Yu-Ching; Rostron, Brian L.; Day, Hannah R.; Stanton, Cassandra
+A.; Hull, Lynn C.; Persoskie, Alexander;  Travers, Mark J.; Taylor,
+Kristie; Conway, Kevin P.; Ambrose, Bridget K.; Borek, Nicolette, "Patterns
+of use of smokeless tobacco in US adults, 2013-2014." American Journal of
+Public Health. in press 2017,. DOI: 10.2105/AJPH.2017.303921
+Full text PDF: https://cdn.ymaws.com/www.srnt.org/resource/resmgr/SRNT19_Abstracts.pdf
+
+7. Choi, Kelvin; Soneji, Samir; Tan, Andy, "Associations Between Exposure
+to Tobacco Direct Mail Coupons and Changes in Smoking Status in a
+Nationally Representative Sample of US Adults." Presented at the Society
+for Research on Nicotine and Tobacco's 23rd Annual Meeting, Society for
+Research on Nicotine and Tobacco, Florence, Italy, Mar 8-11, 2017. POS2-90
+Full text PDF: https://cdn.ymaws.com/www.srnt.org/resource/resmgr/SRNT19_Abstracts.pdf
+
+8. Cohn, Amy; Johnson, Amanda; Rose, Shyanika; Pearson, Jennifer; Villanti,
+Andrea Glasser, Allison; Stanton, Cassandra, "Patterns and Differences in
+the Co-use of Alcohol and Marijuana with the Spectrum of Alternative
+Tobacco Products Across Young Adults and Adults: Results from Wave 1 of the
+PATH Study." Presented at the Society for Research on Nicotine and
+Tobacco's 23rd Annual Meeting, Society for Research on Nicotine and
+Tobacco, Florence, Italy, Mar 8-11, 2017. POS4-28
+Full text PDF: https://cdn.ymaws.com/www.srnt.org/resource/resmgr/SRNT19_Abstracts.pdf
+
+9. Coleman, Blair N; Rostron, Brian; Johnson, Sarah E; Ambrose, Bridget K;
+Pearson, Jennifer; Stanton, Cassandra A; Wang, Baoguang; Delnevo, Cristine;
+Bansal-Travers, Maansi; Kimmel, Heather L; Goniewicz, Maciej L; Niaura,
+Raymond; Abrams, David; Conway, Kevin P; Borek, Nicolette; Compton, Wilson
+M; Hyland, Andrew, "Electronic cigarette use among US adults in the
+Population Assessment of Tobacco and Health (PATH) Study, 2013-2014."
+Tobacco Control. 2017, 26, e117 - e126. DOI: 10.1136/tobaccocontrol-2016-
+053462
+Full text PDF: https://cdn.ymaws.com/www.srnt.org/resource/resmgr/SRNT19_Abstracts.pdf
+
+10. Coleman, Blair; Rostron, Brian; Ambrose, Bridget; Johnson, Sarah;
+Pearson, Jennifer; Wang, Baoguang; Conway, Kevin; Borek, Nicolette;
+Compton, Wilson; Hyland, Andrew, "Frequency of E-Cigarette Use and Factors
+Associated
+With Daily Vs. Non-Daily Use Among U.S. Adults: Findings from Wave 1 of the
+Population Assessment of Tobacco and Health (PATH) Study, 2013-2014."
+Presented at the Society for Research on Nicotine and Tobacco's 22rd Annual
+Meeting, Society for Research on Nicotine and Tobacco, Chicago, IL, Mar
+2016.
+Abstract: https://cdn.ymaws.com/www.srnt.org/resource/resmgr/Conferences/2016_Annual_Meeting/Program/FINAL_SRNT_Abstract_WEB02171.pdf
+
+11. Conway, Kevin P.; Green, Victoria R.; Kasza, Karin A.; Silveira,
+Marushka L.; Borek, Nicolette; Kimmel, Heather L.; Sargent, James D.;
+Stanton, Cassandra A.; Lambert, Elizabeth; Hilmi, Nahla; Reissig, Chad J.;
+Jackson, Kia J.; Tanski, Susanne E.; Maklan, David; Hyland, Andrew J.;
+Compton, Wilson M., "Co-occurrence of tobacco product use, substance use,
+and mental health problems among youth: Findings from Wave 1 (2013-2014) of
+the population assessment of tobacco and health (PATH) study." Addictive
+Behaviors. Jan 2018, 76, 208 - 217. DOI: 10.1016/j.addbeh.2017.08.009
+Abstract: https://cdn.ymaws.com/www.srnt.org/resource/resmgr/Conferences/2016_Annual_Meeting/Program/FINAL_SRNT_Abstract_WEB02171.pdf
+
+12. Conway, Kevin P.; Green, Victoria R.; Kasza, Karin A.; Silveira,
+Marushka L.; Borek, Nicolette; Kimmel, Heather L.; Sargent, James D.;
+Stanton, Cassandra; Lambert, Elizabeth; Hilmi, Nahla; Reissig, Chad J.;
+Jackson, Kia J.; Tanski, Susanne E.; Maklan, David; Hyland, Andrew J.;
+Compton, Wilson M., "Co-occurrence of tobacco product use, substance use,
+and mental health problems among adults: Findings from Wave 1 (2013-2014)
+of the Population Assessment of Tobacco and Health (PATH) Study." Drug and
+Alcohol Dependence. Aug 1, 2017, 177, 104 - 111. DOI:
+10.1016/j.drugalcdep.2017.03.032
+Abstract: https://cdn.ymaws.com/www.srnt.org/resource/resmgr/Conferences/2016_Annual_Meeting/Program/FINAL_SRNT_Abstract_WEB02171.pdf
+
+13. Emory, Kristen; Trinidad, Dennis, "Striking national-level disparities
+in LGB tobacco use." Annals of Behavioral Medicine. Mar 2017, 51, (1), S310
+- S311. DOI: 10.1007/s12160-017-9903-3
+Abstract: https://cdn.ymaws.com/www.srnt.org/resource/resmgr/Conferences/2016_Annual_Meeting/Program/FINAL_SRNT_Abstract_WEB02171.pdf
+
+14. Gaalema, Diann E.; Pericot-Valverde, Irene; Elliott, Rebecca; Bunn,
+Jan; Ades, Philip A.; Higgins, Stephen T., "Cardiac Patients and Tobacco
+Use: Perceptions, Use, and Change in Use after a Major Event." Presented at
+the 2017 Vermont Center on Behavior and Health (VCBH) Conference, Vermont
+Center on Behavior and Health, Burlington, VT, Oct 6, 2017.
+Full text: https://livestream.com/VCBH/Conference2017/videos/163866001
+
+15. Ganz, Ollie, "Tobacco Use and Mental Health across the Age Continuum: A
+Study of Youth and Adults from the Population Assessment of Tobacco and
+Health Study." Thesis, George Washington University, 2019.
+Full text: https://livestream.com/VCBH/Conference2017/videos/163866001
+
+16. Ganz, Ollie; Johnson, Amanda, Villanti, Andrea; Pearson, Jennifer;
+Cohn, Amy, "Differences in Patterns of and Reasons for Cigarette Smoking
+Between Adults with and Without Mental Health Problems: Results from The
+Population Assessment of Tobacco and Health Study." Presented at the
+Society for Research on Nicotine and Tobacco's 23rd Annual Meeting, Society
+for Research on Nicotine and Tobacco, Florence, Italy, Mar 8-11, 2017.
+POS3-139
+Full text: https://livestream.com/VCBH/Conference2017/videos/163866001
+
+17. Green, Victoria R.; Silveira, Marushka L.; Kimmel, Heather L.; Conway,
+Kevin P., "Body mass index and tobacco-product use among U.S. youth:
+Findings from Wave 1 (2013-2014) of the Population Assessment of Tobacco
+and Health (PATH) Study." Addictive Behaviors. in press 2018,. DOI:
+10.1016/j.addbeh.2018.02.005
+Full text: https://livestream.com/VCBH/Conference2017/videos/163866001
+
+18. Harrell, Melissa; Quisenberry, Amanda; Barrington-Trimis, Jessica;
+Soneji, Samir, "Exploring Use and Preference of E-Cigarette Flavors among
+Adolescents, Young Adults, and Adults." Presented at the Society for
+Research on Nicotine and Tobacco's 24th Annual Meeting, Society for
+Research on Nicotine and Tobacco, Baltimore, MR, Feb 2018.
+Abstract: https://cdn.ymaws.com/www.srnt.org/resource/resmgr/conferences/2018_Annual_Meeting/65388_SRNT_2018_Abstract_fin.pdf
+
+19. Hoffman, Allison; Goniewicz, Maciej; Jordt, Sven-Eric; Villanti,
+Andrea, "Exploring Dimensions of Flavors: Toxicity, Preference, and Use."
+Presented at the Society for Research on Nicotine and Tobacco's 23rd Annual
+Meeting, Society for Research on Nicotine and Tobacco, Florence, Italy, Mar
+8-11, 2017. SYM4
+Abstract: https://cdn.ymaws.com/www.srnt.org/resource/resmgr/conferences/2018_Annual_Meeting/65388_SRNT_2018_Abstract_fin.pdf
+
+20. Hyland, Andrew; Ambrose, Bridget K.; Conway, Kevin P.; Borek,
+Nicolette; Lambert, Elizabeth; Carusi, Charles; Taylor, Kristie; Crosse,
+Scott; Fong, Geoffrey T.; Cummings, K. Michael; Abrams, David; Pierce, John
+P.; Sargent, James; Messer, Karen; Bansal-Travers, Maansi; Niaura, Ray;
+Vallone, Donna; Hammond, David; Hilmi, Nahla; Kwan, Jonathan; Piesse,
+Andrea; Kalton, Graham; Lohr, Sharon; Pharris-Ciurej, Nick; Castleman,
+Victoria; Green, Victoria R.; Tessman, Greta; Kaufman, Annette; Lawrence,
+Charles; van Bemmel, Dana M.; Kimmel, Heather L.; Blount, Ben; Yang, Ling;
+O'Brien, Barbara; Tworek, Cindy; Alberding, Derek; Hull, Lynn C.; Cheng,
+Yu-Ching; Maklan, David; Backinger, Cathy L.; Compton, Wilson M., "Design
+and methods of the Population Assessment of Tobacco and Health (PATH)
+Study." Tobacco Control. 2017, 26, 371 - 378. DOI: 10.1136/tobaccocontrol-
+2016-052934
+Abstract: https://cdn.ymaws.com/www.srnt.org/resource/resmgr/conferences/2018_Annual_Meeting/65388_SRNT_2018_Abstract_fin.pdf
+
+21. Johnson, Amanda; Glasser, Allison; Pearson, Jennifer; Villanti, Andrea,
+"Adult Tobacco Use: Impact of Lifetime use Thresholds on National
+Prevalence Estimates." Presented at the Society for Research on Nicotine
+and Tobacco's 23rd Annual Meeting, Society for Research on Nicotine and
+Tobacco, Florence, Italy, Mar 8-11, 2017. POS3-31
+Abstract: https://cdn.ymaws.com/www.srnt.org/resource/resmgr/conferences/2018_Annual_Meeting/65388_SRNT_2018_Abstract_fin.pdf
+
+22. Kalkhoran, Sara; Berkowitz, Seth A.; Rigotti, Nancy A.; Baggett, Travis
+P., "Financial strain, quit attempts, and smoking abstinence among U.S.
+adult smokers." American Journal of Preventive Medicine. Jul 2018, 55, (1),
+80 - 88. DOI: 10.1016/j.amepre.2018.01.036
+Abstract: https://cdn.ymaws.com/www.srnt.org/resource/resmgr/conferences/2018_Annual_Meeting/65388_SRNT_2018_Abstract_fin.pdf
+
+23. Kasza, Karin A.; Ambrose, Bridget K.; Conway, Kevin P.; Borek,
+Nicolette; Taylor, Kristie; Goniewicz, Maciej L.; Cummings, K. Michael;
+Sharma, Eva; Pearson, Jennifer L.; Green, Victoria R.; Kaufman, Annette R.;
+Bansal-Travers, Maansi; Travers, Mark J.; Kwan, Jonathan; Tworek, Cindy;
+Cheng, Yu-Ching; Yang, Ling; Pharris-Ciurej, Nikolas; van Bemmel, Dana M.;
+Backinger, Cathy L.; Compton, Wilson M.; Hyland, Andrew J., "Tobacco-
+product use by adults and youths in the United States in 2013 and 2014."
+New England Journal of Medicine. Jan 26, 2017, 376, 342 - 353. DOI:
+10.1056/NEJMsa1607538
+Abstract: https://cdn.ymaws.com/www.srnt.org/resource/resmgr/conferences/2018_Annual_Meeting/65388_SRNT_2018_Abstract_fin.pdf
+
+24. Kasza, Karin; Conway, Kevin; Borek, Nicolette; Sharma, Eva; Goniewicz,
+Maciej; Cummings, K.M; Ambrose, Bridget; Compton, Wilson; Backinger, Cathy;
+Hyland, Andrew, "Youth Tobacco Use in 2013/14: Findings From the Population
+Assessment of Tobacco and Health (PATH) Study, Wave 1." Presented at the
+Society for Research on Nicotine and Tobacco's 22rd Annual Meeting, Society
+for Research on Nicotine and Tobacco, Chicago, IL, March 2016.
+Abstract: https://cdn.ymaws.com/www.srnt.org/resource/resmgr/Conferences/2016_Annual_Meeting/Program/FINAL_SRNT_Abstract_WEB02171.pdf
+
+25. Kasza, Karin; Conway, Kevin; Borek, Nicolette; Taylor, Kristie;
+Goniewicz, Maciej; Cummings, K.M; Ambrose, Bridget; Compton, Wilson;
+Backinger, Cathy; Hyland, Andrew, "Adult Tobacco Use In 2013/14: Findings
+from the Population Assessment of Tobacco and Health (PATH) Study, Wave 1."
+Presented at the Society for Research on Nicotine and Tobacco's 22rd Annual
+Meeting, Society for Research on Nicotine and Tobacco, Chicago, IL, Mar
+2016.
+Abstract: https://cdn.ymaws.com/www.srnt.org/resource/resmgr/Conferences/2016_Annual_Meeting/Program/FINAL_SRNT_Abstract_WEB02171.pdf
+
+26. Kurti, A.N.; Redner, R.; Lopez, A.A.; Keith, D.R.; Villanti, A.C.;
+Stanton, C.A.; Gaalema, D.E.; Bunn, J.Y.; Doogan, N.J.; Cepeda-Benito, A.;
+Roberts, M.E.; Phillips, J.; Higgins, S.T., "Tobacco and nicotine delivery
+product use in a national sample of pregnant women." Preventive Medicine.
+Nov 2017, 104, 50 - 56. DOI: 10.1016/j.ypmed.2017.07.030
+Abstract: https://cdn.ymaws.com/www.srnt.org/resource/resmgr/Conferences/2016_Annual_Meeting/Program/FINAL_SRNT_Abstract_WEB02171.pdf
+
+27. Kurti, Allison; Bunn, Janice; Higgins, Stephen; Redner, Ryan; Lopez,
+Alexa; Keith, Diana; Stanton, Cassandra; Gaalema, Diann; Doogan, Nathan;
+Cepeda-Benito, Antonio; Roberts, Megan, "Prevalence of E-cigarette Use and
+Characteristics in a U.S. Nationally Representative Sample of Pregnant
+Women." Presented at the Society for Research on Nicotine and Tobacco's
+23rd Annual Meeting, Society for Research on Nicotine and Tobacco,
+Florence, Italy, Mar 8-11, 2017. PA8-2
+Abstract: https://cdn.ymaws.com/www.srnt.org/resource/resmgr/Conferences/2016_Annual_Meeting/Program/FINAL_SRNT_Abstract_WEB02171.pdf
+
+28. Leas, Eric C.; Ayers, John W.; Strong, David R.; Pierce, John P.,
+"Which cigarettes do Americans think are safer? A population-based analysis
+with wave 1 of the PATH study." Tobacco Control. 2017, 26, (e1), e59 - e60.
+DOI: 10.1136/tobaccocontrol-2016-053334
+Abstract: https://cdn.ymaws.com/www.srnt.org/resource/resmgr/Conferences/2016_Annual_Meeting/Program/FINAL_SRNT_Abstract_WEB02171.pdf
+
+29. Liu, Guodong; Wasserman, Emily; Kong, Lan; Foulds, Jonathan, "A
+comparison of nicotine dependence among exclusive E-cigarette and cigarette
+users in the PATH study." Preventive Medicine. in press 2017,. DOI:
+10.1016/j.ypmed.2017.04.001
+Abstract: https://cdn.ymaws.com/www.srnt.org/resource/resmgr/Conferences/2016_Annual_Meeting/Program/FINAL_SRNT_Abstract_WEB02171.pdf
+
+30. Martinez, Sydney; Beebe, Laura, "Exploring Non-cognitive Skills,
+Personality, Impulsivity, and Tobacco Use Among GED Recipients." Presented
+at the Society for Research on Nicotine and Tobacco's 23rd Annual Meeting,
+Society for Research on Nicotine and Tobacco, Florence, Italy, Mar 8-11,
+2017. POS-126
+Abstract: https://cdn.ymaws.com/www.srnt.org/resource/resmgr/Conferences/2016_Annual_Meeting/Program/FINAL_SRNT_Abstract_WEB02171.pdf
+
+31. Merianos, Ashley L.; Jandarov, Roman A.; Mahabee-Gittens, E. Melinda,
+"Association of secondhand smoke exposure with asthma symptoms, medication
+use, and healthcare utilization among asthmatic adolescents." Journal of
+Asthma. In press 2018, 1 - 11. DOI: 10.1080/02770903.2018.1463379
+Abstract: https://cdn.ymaws.com/www.srnt.org/resource/resmgr/Conferences/2016_Annual_Meeting/Program/FINAL_SRNT_Abstract_WEB02171.pdf
+
+32. Miller, Mollie E.; Tidey, Jennifer W.; Bunn, Janice Y.; Gaalema, Diann
+E.; Scott-Sheldon, Lori A. J.; Pericot-Valverde, Irene; Japuntich, Sandra
+J., "Self-perceived mental health and population-level tobacco use
+disparities." Tobacco Regulatory Science. Jul 2018, 4, (4), 3 - 11. DOI:
+10.18001/TRS.4.4.1
+Abstract: https://cdn.ymaws.com/www.srnt.org/resource/resmgr/Conferences/2016_Annual_Meeting/Program/FINAL_SRNT_Abstract_WEB02171.pdf
+
+33. Moran, Meghan B.; Alexander, Tesfa; Kennedy, Ryan; Weiger, Caitlin,
+"Disparities in the Prevalence and Importance of Tobacco Benefit and Harm
+Perceptions among U.S. Youth [poster]." Presented at the 2017 Vermont
+Center on Behavior and Health Conference, Vermont Center on Behavior and
+Health, Burlington, VT, Oct 5-6, 2017.
+Abstract: https://cdn.ymaws.com/www.srnt.org/resource/resmgr/Conferences/2016_Annual_Meeting/Program/FINAL_SRNT_Abstract_WEB02171.pdf
+
+34. Nicksic, Nicloe E.; Snell, L.M; Barnes, Andrew J., "Does exposure and
+receptivity to e-cigarette advertisements relate to e-cigarette and
+conventional cigarette use behaviors among youth? Results from wave 1 of
+the Population Assessment of Tobacco and Health study." Journal of Applied
+Research on Children. 2017, 8, (2), 1 - 18.
+Full text PDF: http://digitalcommons.library.tmc.edu/cgi/viewcontent.cgi?article=1332&context=childrenatrisk
+
+35. Pearson, Jennifer L.; Johnson, Amanda L.; Johnson, Sarah E.; Stanton,
+Cassandra A.; Villanti, Andrea C.; Niaura, Raymond S.; Glasser, Allison M.;
+Wang, Baoguang; Abrams, David B.; Cummings, K. Michael; Hyland, Andrew,
+"Adult interest in using a hypothetical modified risk tobacco product:
+Findings from Wave 1 of the Population Assessment of Tobacco and Health
+Study (2013-2014)." Addiction. in press 2017,. DOI: 10.1111/add.13952
+Full text PDF: http://digitalcommons.library.tmc.edu/cgi/viewcontent.cgi?article=1332&context=childrenatrisk
+
+36. Pearson, Jennifer L.; Johnson, Amanda; Villanti, Andrea; Glasser,
+Allison M.; Collins, Lauren; Cohn, Amy; Rose, Shyanika W.; Niaura, Raymond;
+Stanton, Cassandra A., "Misperceptions of harm among Natural American
+Spirit smokers: Results from wave 1 of the Population Assessment of Tobacco
+and Health (PATH) study (2013-2014)." Tobacco Control. in press 2017,. DOI:
+10.1136/tobaccocontrol-2016-053265
+Full text PDF: http://digitalcommons.library.tmc.edu/cgi/viewcontent.cgi?article=1332&context=childrenatrisk
+
+37. Pearson, Jennifer; Johnson, Amanda; Villanti, Andrea; Glasser, Allison,
+Collins, Lauren; Cohn, Amy; Rose, Shyanika; Niaura, Raymond; Stanton,
+Cassandra, "Misperceptions of Harm among American Spirit Smokers: Results
+from Wave 1 of the Population Assessment of Tobacco and Health (PATH) Study
+(2013-2014)." Presented at the Society for Research on Nicotine and
+Tobacco's 23rd Annual Meeting, Society for Research on Nicotine and
+Tobacco, Florence, Italy, Mar 8-11, 2017. SYM14A
+Full text PDF: http://digitalcommons.library.tmc.edu/cgi/viewcontent.cgi?article=1332&context=childrenatrisk
+
+38. Pearson, Jennifer; Moran, Meghan; Lewis, Jane; Kennedy, R.D., "Natural,
+Organic, Addictive-free, and Eco-friendly Themes in Cigarette Packaging and
+Advertising: The New 'Light,' 'Low,' and 'Mild'?." Presented at the Society
+for Research on Nicotine and Tobacco's 23rd Annual Meeting, Society for
+Research on Nicotine and Tobacco, Florence, Italy, Mar 8-11, 2017. SYM14
+Full text PDF: http://digitalcommons.library.tmc.edu/cgi/viewcontent.cgi?article=1332&context=childrenatrisk
+
+39. Persoskie, Alexander; O'Brien, Erin Keely; Nguyen, Anh B.; Tworek,
+Cindy, "Measuring youth beliefs about the harms of e-cigarettes and
+smokeless tobacco compared to cigarettes." Addictive Behaviors. Jul 2017,
+70, 7 - 13. DOI: 10.1016/j.addbeh.2017.01.033
+Full text PDF: http://digitalcommons.library.tmc.edu/cgi/viewcontent.cgi?article=1332&context=childrenatrisk
+
+40. Pierce, John P.; Sargent, James D.; Martha M.; Borek, Nicolette;
+Portnoy, David; Green, Victoria R.; Kaufman, Annette R.; Stanton,
+Cassandra; Bansal-Travers, Maansi; David R.; Pearson, Jennifer L.; Coleman,
+Blair N.; Leas, Eric; Noble, Madison L.; Trinidad, Dennis R.; Moran,
+Meghan; Carusi, Charles; Hyland, Andrew; Messer, Karen, "Receptivity to
+tobacco advertising and susceptibility to tobacco products." Pediatrics.
+Jun 2017, 139, (6), e20163353.
+Full text PDF: http://pediatrics.aappublications.org/content/pediatrics/early/2017/05/18/peds.2016-3353.full.pdf
+
+41. Printz, Carrie, "FDA funds research to help guide tobacco regulation:
+New tobacco products, young adult smokers, and race among focus of
+studies." Cancer. Nov 1, 2015, 121, (21), 3751 - 3752. DOI:
+10.1002/cncr.29005
+Full text PDF: http://pediatrics.aappublications.org/content/pediatrics/early/2017/05/18/peds.2016-3353.full.pdf
+
+42. Roberts, Megan E.; Doogan, Nathan J.; Stanton, Cassandra A.;
+Quisenberry, Amanda J.; Villanti, Andrea C.; Gaalema, Diann E.; Keith,
+Diana R.; Kurti, Allison N.; Lopez, Alexa A.; Redner, Ryan; Cepeda-Benito,
+Antonio; Higgins, Stephen T., "Rural versus urban use of traditional and
+emerging tobacco products in the United States, 2013-2014." American
+Journal of Public Health. Oct 2017, 107, (10), 1554 - 1559. DOI:
+10.2105/AJPH.2017.303967
+Full text PDF: http://pediatrics.aappublications.org/content/pediatrics/early/2017/05/18/peds.2016-3353.full.pdf
+
+43. Robinson, Joelle N.; Wang, Baoguang; Jackson, Kia J.; Donaldson,
+Elisabeth A.; Ryant, Chase A., "Characteristics of hookah tobacco smoking
+sessions and correlates of use frequency among US adults: Findings from
+Wave 1 of the Population Assessment of Tobacco and Health (PATH) Study."
+Nicotine and Tobacco Research. in press 2017,. DOI: 10.1093/ntr/ntx060
+Full text PDF: http://pediatrics.aappublications.org/content/pediatrics/early/2017/05/18/peds.2016-3353.full.pdf
+
+44. Rodu, B.; Plurphanswat, N., "Quit methods used by American smokers,
+2013-2014." International Journal of Environmental Research and Public
+Health. Nov 2017, 14, (11), e1403. DOI: 10.3390/ijerph14111403
+Full text PDF: http://pediatrics.aappublications.org/content/pediatrics/early/2017/05/18/peds.2016-3353.full.pdf
+
+45. Rodu, Brad; Plurphanswat, Nantaporn, "E-cigarette use among US adults:
+Population Assessment of Tobacco and Health (PATH) Study." Nicotine and
+Tobacco Research. 2018, 20, (8), 940 - 948. DOI: 10.1093/ntr/ntx194
+Full text PDF: http://pediatrics.aappublications.org/content/pediatrics/early/2017/05/18/peds.2016-3353.full.pdf
+
+46. Salloum, R.G.; Thrasher, J.F.; Getz, K.R.; Barnett, T.E.; Asfar, T.;
+Maziak, W., "Patterns of waterpipe tobacco smoking among U.S. young adults,
+2013-2014." American Journal of Preventive Medicine. in press 2016,. DOI:
+10.1016/j.amepre.2016.10.015
+Full text PDF: http://pediatrics.aappublications.org/content/pediatrics/early/2017/05/18/peds.2016-3353.full.pdf
+
+47. Shiffman, Saul; Sembower, Mark, "PATH Data: Harm Reduction is Teens'
+Top Reason for Using E-cigarettes." Presented at the Society for Research
+on Nicotine and Tobacco's 23rd Annual Meeting, Society for Research on
+Nicotine and Tobacco, Florence, Italy, Mar 8-11, 2017. PS4-101
+Full text PDF: http://pediatrics.aappublications.org/content/pediatrics/early/2017/05/18/peds.2016-3353.full.pdf
+
+48. Shiffman, Saul; Sembower, Mark; Kim, Mimi; Curtin, Geoffrey, "Flavored
+E-cigarette Use Among Adults: Results
+from Two National Data Sets." Presented at the Society for Research on
+Nicotine and Tobacco's 23rd Annual Meeting, Society for Research on
+Nicotine and Tobacco, Florence, Italy, Mar 8-11, 2017. POS3-62
+Full text PDF: http://pediatrics.aappublications.org/content/pediatrics/early/2017/05/18/peds.2016-3353.full.pdf
+
+49. Siegfried, Yumiko; Morganstein, David; Piesse, Andrea; Lohr, Sharon,
+"Why Independent Surveys with the Same Objective Yield Different
+Estimates." Presented at the Survey Research Methods Section, Joint
+Statistical Meeting 2017, Baltimore, MR, July 31 2017.
+Full text PDF: https://ww2.amstat.org/sections/srms/Proceedings/y2017/files/593857.pdf
+
+50. Soneji, Samir; Pierce, John P.; Choi, Kelvin; Portnoy, David B.;
+Margolis, Katherine A.; Stanton, Cassandra A.; Moore, Rhonda J.; Bansal-
+Travers, Maansi; Carusi, Charles; Hyland, Andrew; Sargent, James,
+"Engagement with online tobacco marketing and associations with tobacco
+product use among U.S. youth." Journal of Adolescent Health. in press
+2017,. DOI: 10.1016/j.jadohealth.2017.01.023
+Full text PDF: https://ww2.amstat.org/sections/srms/Proceedings/y2017/files/593857.pdf
+
+51. Strong, D.R.; Pearson, J.; Ehlke, S.; Kirchner, T.; Abrams, D.; Taylor,
+K.; Compton, W.M.; Conway, K.P.; Lambert, E.; Green, V.R.; Hull, L.C.;
+Evans, S.E.; Cummings, K.M.; Goniewicz, M.; Hyland, A.; Niaura, R.,
+"Indicators of dependence for different types of tobacco product users:
+Descriptive findings from Wave 1 (2013-2014) of the Population Assessment
+of Tobacco and Health (PATH) study." Drug and Alcohol Dependence. Sep 2017,
+1, (178), 257 - 266. DOI: 10.1016/j.drugalcdep.2017.05.010
+Full text PDF: https://ww2.amstat.org/sections/srms/Proceedings/y2017/files/593857.pdf
+
+52. Strong, David; Niaura, Ray; Leas, Eric; Noble, Madison; Messer, Karen;
+Pierce, John, "Measurement of Youth Tobacco Dependence Across Multiple
+Products." Presented at the Society for Research on Nicotine and Tobacco's
+23rd Annual Meeting, Society for Research on Nicotine and Tobacco,
+Florence, Italy, Mar 8-11, 2017. POS3-32
+Full text PDF: https://ww2.amstat.org/sections/srms/Proceedings/y2017/files/593857.pdf
+
+53. Tanski, Susanne; Emond, Jennifer; Stanton, Cassandra; Kirchner, Thomas;
+Choi, Tsz; Yang, Ling; Ryant, Chase; Robinson, Joelle; Hyland, Andrew,
+"Youth Access to Tobacco Products in the United States: Findings from Wave
+1 (2013-2014) of the Population Assessment of Tobacco and Health (PATH)
+Study." Presented at the Society for Research on Nicotine and Tobacco's
+22rd Annual Meeting, Society for Research on Nicotine and Tobacco, Chicago,
+IL, March 2016.
+Abstract: https://cdn.ymaws.com/www.srnt.org/resource/resmgr/Conferences/2016_Annual_Meeting/Program/FINAL_SRNT_Abstract_WEB02171.pdf
+
+54. The PATH Study Team, "Tobacco Use Transitions Among Youth and Adults:
+Descriptive Longitudinal Data from Waves 1 and 2 of the PATH Study."
+Presented at the Society for Research on Nicotine and Tobacco's 23rd Annual
+Meeting, Society for Research on Nicotine and Tobacco, Florence, Italy, Mar
+8-11, 2017. SYM22
+Abstract: https://cdn.ymaws.com/www.srnt.org/resource/resmgr/Conferences/2016_Annual_Meeting/Program/FINAL_SRNT_Abstract_WEB02171.pdf
+
+55. Trinidad, Dennis R.; Pierce, John P.; Sargent, James D.; White, Martha
+M.; Strong, David R.; Portnoy, David B.; Green, Victoria R.; Stanton,
+Cassandra A.; Choi, Kelvin; Bansal-Travers, Maansi; Shi, Yuyan; Pearson,
+Jennifer L.; Kaufman, Annette R.; Borek, Nicolette; Coleman, Blair N.;
+Hyland, Andrew; Carusi, Charles; Kealey, Sheila; Leas, Eric; Noble, Madison
+L.; Messer, Karen, "Susceptibility to tobacco product use among youth in
+Wave 1 of the Population Assessment of Tobacco and Health (PATH) Study."
+Preventive Medicine. Aug 2017, 101, 8 - 14. DOI:
+10.1016/j.ypmed.2017.05.010
+Abstract: https://cdn.ymaws.com/www.srnt.org/resource/resmgr/Conferences/2016_Annual_Meeting/Program/FINAL_SRNT_Abstract_WEB02171.pdf
+
+56. Unger, Jennifer, "Engagement with Tobacco Product Websites is
+Associated with Cigarette Smoking and Susceptibility Among Adolescents."
+Presented at the Society for Research on Nicotine and Tobacco's 23rd Annual
+Meeting, Society for Research on Nicotine and Tobacco, Florence, Italy, Mar
+8-11, 2017. POS3-8
+Abstract: https://cdn.ymaws.com/www.srnt.org/resource/resmgr/Conferences/2016_Annual_Meeting/Program/FINAL_SRNT_Abstract_WEB02171.pdf
+
+57. Villanti, Andrea C.; Johnson, Amanda L.; Ambrose, Bridget K.; Cummings,
+K. Michael; Stanton, Cassandra A.; Rose, Shyanika W.; Feirman, Shari P.;
+Tworek, Cindy; Glasser, Allison M.; Pearson, Jennifer L.; Cohn, Amy M.;
+Conway, Kevin P.; Niaura, Raymond S.; Bansal-Travers, Maansi; Hyland,
+Andrew, "Flavored tobacco product use in youth and adults: Findings from
+the first wave of the PATH Study (2013-2014)." American Journal of
+Preventive Medicine. Aug 2017, 53, (2), 139 - 151. DOI:
+10.1016/j.amepre.2017.01.026
+Abstract: https://cdn.ymaws.com/www.srnt.org/resource/resmgr/Conferences/2016_Annual_Meeting/Program/FINAL_SRNT_Abstract_WEB02171.pdf
+
+58. Wong, Su-Wei; Lin, Hsien-Chang; Piper, Megan E.; Siddiqui, Adam; Buu,
+Anne, "Measuring characteristics of e-cigarette consumption among college
+students." Journal of American College Health. In press 2018, 1 - 20. DOI:
+10.1080/07448481.2018.1481075
+Abstract: https://cdn.ymaws.com/www.srnt.org/resource/resmgr/Conferences/2016_Annual_Meeting/Program/FINAL_SRNT_Abstract_WEB02171.pdf
