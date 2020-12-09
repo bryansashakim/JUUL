@@ -1,0 +1,234 @@
+---------------------------------------------------------------------------------------
+      name:  <unnamed>
+       log:  /homes/nber/kimcwa/Documents/E-cigarettes/MTF_Data/Analysis/2013_FA.log
+  log type:  text
+ opened on:   9 Dec 2020, 00:13:19
+
+. // 8th/10th Grade
+. use "/homes/nber/kimcwa/Documents/E-cigarettes/MTF_Data/Process/Data/MTF_2013_8th.dta
+> ",clear
+(Monitoring the Future: A Continuing Study of American Youth (8th- and 10th-Grade)
+
+. append using "/homes/nber/kimcwa/Documents/E-cigarettes/MTF_Data/Process/Data/MTF_201
+> 3_10th.dta"
+
+.         * future outlook
+.         tempfile temp
+
+.         * future outlook
+.         factor future_hopeless future_life life_not_useful hw_lkly_go_clg hw_lkly_grd
+> _clg
+(obs=7,548)
+
+Factor analysis/correlation                      Number of obs    =      7,548
+    Method: principal factors                    Retained factors =          2
+    Rotation: (unrotated)                        Number of params =          9
+
+    --------------------------------------------------------------------------
+         Factor  |   Eigenvalue   Difference        Proportion   Cumulative
+    -------------+------------------------------------------------------------
+        Factor1  |      1.82257      0.78722            0.7403       0.7403
+        Factor2  |      1.03535      1.08944            0.4206       1.1609
+        Factor3  |     -0.05409      0.07969           -0.0220       1.1389
+        Factor4  |     -0.13379      0.07448           -0.0543       1.0846
+        Factor5  |     -0.20827            .           -0.0846       1.0000
+    --------------------------------------------------------------------------
+    LR test: independent vs. saturated:  chi2(10) = 1.5e+04 Prob>chi2 = 0.0000
+
+Factor loadings (pattern matrix) and unique variances
+
+    -------------------------------------------------
+        Variable |  Factor1   Factor2 |   Uniqueness 
+    -------------+--------------------+--------------
+    future_hop~s |   0.5169    0.5434 |      0.4375  
+     future_life |   0.3581    0.2618 |      0.8032  
+    life_not_u~l |   0.4855    0.5643 |      0.4459  
+    hw_lkly_go~g |   0.7724   -0.4194 |      0.2276  
+    hw_lkly_gr~g |   0.7713   -0.4210 |      0.2279  
+    -------------------------------------------------
+
+.         predict fit1 fit2 
+(option regression assumed; regression scoring)
+
+Scoring coefficients (method = regression)
+
+    ----------------------------------
+        Variable |  Factor1   Factor2 
+    -------------+--------------------
+    future_hop~s |  0.21919   0.36745 
+     future_life |  0.08594   0.11624 
+    life_not_u~l |  0.21130   0.36445 
+    hw_lkly_go~g |  0.37712  -0.29851 
+    hw_lkly_gr~g |  0.37447  -0.30203 
+    ----------------------------------
+
+
+.         sum fit1 fit2
+
+    Variable |        Obs        Mean    Std. Dev.       Min        Max
+-------------+---------------------------------------------------------
+        fit1 |      7,548    7.95e-09    .9092619  -.8429397   4.232712
+        fit2 |      7,548   -9.39e-10    .8295163  -2.980258   2.508195
+
+.         loadingplot
+
+.         graph twoway (scatter fit1 future_hopeless) (lfit fit1 future_hopeless)
+
+.         graph export future_outlook_fut_hpls.pdf
+(file future_outlook_fut_hpls.pdf written in PDF format)
+
+.         graph twoway (scatter fit1 future_life) (lfit fit1 future_life) 
+
+.         graph twoway (scatter fit1 life_not_useful) (lfit fit1 life_not_useful)
+
+.         graph twoway (scatter fit1 hw_lkly_go_clg) (lfit fit1 hw_lkly_go_clg) 
+
+.         graph twoway (scatter fit1 hw_lkly_grd_clg) (lfit fit1 hw_lkly_grd_clg)
+
+.         graph export future_outlook_grd_clg.pdf
+(file future_outlook_grd_clg.pdf written in PDF format)
+
+.         
+.         graph twoway (scatter fit2 future_hopeless) (lfit fit2 future_hopeless)
+
+.         graph twoway (scatter fit2 future_life) (lfit fit2 future_life) 
+
+.         graph twoway (scatter fit2 life_not_useful) (lfit fit2 life_not_useful)
+
+.         graph twoway (scatter fit2 hw_lkly_go_clg) (lfit fit2 hw_lkly_go_clg) 
+
+.         graph twoway (scatter fit2 hw_lkly_grd_clg) (lfit fit2 hw_lkly_grd_clg)
+
+.         
+.         //estat common
+.         * social media savvy
+.         use `temp',clear
+(Monitoring the Future: A Continuing Study of American Youth (8th- and 10th-Grade)
+
+.         factor hr_internet hr_social_net  hr_text hr_call hw_video_chat
+(obs=7,796)
+
+Factor analysis/correlation                      Number of obs    =      7,796
+    Method: principal factors                    Retained factors =          2
+    Rotation: (unrotated)                        Number of params =          9
+
+    --------------------------------------------------------------------------
+         Factor  |   Eigenvalue   Difference        Proportion   Cumulative
+    -------------+------------------------------------------------------------
+        Factor1  |      2.05505      1.90587            1.1344       1.1344
+        Factor2  |      0.14918      0.15598            0.0824       1.2168
+        Factor3  |     -0.00680      0.16714           -0.0038       1.2130
+        Factor4  |     -0.17394      0.03805           -0.0960       1.1170
+        Factor5  |     -0.21198            .           -0.1170       1.0000
+    --------------------------------------------------------------------------
+    LR test: independent vs. saturated:  chi2(10) = 1.1e+04 Prob>chi2 = 0.0000
+
+Factor loadings (pattern matrix) and unique variances
+
+    -------------------------------------------------
+        Variable |  Factor1   Factor2 |   Uniqueness 
+    -------------+--------------------+--------------
+     hr_internet |   0.4127    0.2764 |      0.7533  
+    hr_social_~t |   0.7198    0.1019 |      0.4715  
+         hr_text |   0.7322   -0.1418 |      0.4438  
+         hr_call |   0.7049   -0.1876 |      0.4680  
+    hw_video_c~t |   0.5777    0.0842 |      0.6592  
+    -------------------------------------------------
+
+.         predict fit1
+(option regression assumed; regression scoring)
+
+Scoring coefficients (method = regression)
+
+    ----------------------------------
+        Variable |  Factor1   Factor2 
+    -------------+--------------------
+     hr_internet |  0.11491   0.26959 
+    hr_social_~t |  0.29192   0.19157 
+         hr_text |  0.30101  -0.20436 
+         hr_call |  0.27569  -0.26155 
+    hw_video_c~t |  0.18198   0.11643 
+    ----------------------------------
+
+
+.         sum fit1
+
+    Variable |        Obs        Mean    Std. Dev.       Min        Max
+-------------+---------------------------------------------------------
+        fit1 |      7,796   -1.33e-09    .8816947  -1.411905   2.879256
+
+.         graph twoway (scatter fit1 hr_internet) (lfit fit1 hr_internet)
+
+.         graph twoway (scatter fit1 hr_social_net) (lfit fit1 hr_social_net)
+
+.         graph twoway (scatter fit1 hr_text) (lfit fit1 hr_text)
+
+.         graph twoway (scatter fit1 hr_call) (lfit fit1 hr_call)
+
+.         graph twoway (scatter fit1 hw_video_chat) (lfit fit1 hw_video_chat)
+
+.         graph export social_media_vid.pdf
+(file social_media_vid.pdf written in PDF format)
+
+.         * parental background
+.         use `temp',clear
+(Monitoring the Future: A Continuing Study of American Youth (8th- and 10th-Grade)
+
+.         factor meduc feduc
+(obs=26,998)
+
+Factor analysis/correlation                      Number of obs    =     26,998
+    Method: principal factors                    Retained factors =          1
+    Rotation: (unrotated)                        Number of params =          1
+
+    --------------------------------------------------------------------------
+         Factor  |   Eigenvalue   Difference        Proportion   Cumulative
+    -------------+------------------------------------------------------------
+        Factor1  |      0.80126      1.05062            1.4518       1.4518
+        Factor2  |     -0.24936            .           -0.4518       1.0000
+    --------------------------------------------------------------------------
+    LR test: independent vs. saturated:  chi2(1)  = 8716.97 Prob>chi2 = 0.0000
+
+Factor loadings (pattern matrix) and unique variances
+
+    ---------------------------------------
+        Variable |  Factor1 |   Uniqueness 
+    -------------+----------+--------------
+           meduc |   0.6330 |      0.5994  
+           feduc |   0.6330 |      0.5994  
+    ---------------------------------------
+
+.         predict fit1
+(option regression assumed; regression scoring)
+
+Scoring coefficients (method = regression)
+
+    ------------------------
+        Variable |  Factor1 
+    -------------+----------
+           meduc |  0.41497 
+           feduc |  0.41497 
+    ------------------------
+
+
+.         sum fit1
+
+    Variable |        Obs        Mean    Std. Dev.       Min        Max
+-------------+---------------------------------------------------------
+        fit1 |     26,998    9.20e-09    .7247813  -1.285887   1.761531
+
+.         graph twoway (scatter fit1 meduc) (lfit fit1 meduc)
+
+.         graph twoway (scatter fit1 feduc) (lfit fit1 feduc)
+
+.         graph export parent_bckgrnd_feduc.pdf
+(file parent_bckgrnd_feduc.pdf written in PDF format)
+
+.         
+.         
+.         log close
+      name:  <unnamed>
+       log:  /homes/nber/kimcwa/Documents/E-cigarettes/MTF_Data/Analysis/2013_FA.log
+  log type:  text
+ closed on:   9 Dec 2020, 00:13:36
+---------------------------------------------------------------------------------------
