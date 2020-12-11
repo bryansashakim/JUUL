@@ -12,10 +12,10 @@
 . append using "/homes/nber/kimcwa/Documents/E-cigarettes/MTF_Data/Process/Data/MTF_201
 > 3_10th.dta"
 
-.         * future outlook
+
 .         tempfile temp
 
-.         * future outlook
+.         * FUTURE OUTLOOK
 .         factor future_hopeless future_life life_not_useful hw_lkly_go_clg hw_lkly_grd
 > _clg
 (obs=7,548)
@@ -101,7 +101,9 @@ Scoring coefficients (method = regression)
 
 .         
 .         //estat common
-.         * social media savvy
+
+
+.         * SOCIAL MEDIA SAVVY
 .         use `temp',clear
 (Monitoring the Future: A Continuing Study of American Youth (8th- and 10th-Grade)
 
@@ -170,7 +172,9 @@ Scoring coefficients (method = regression)
 .         graph export social_media_vid.pdf
 (file social_media_vid.pdf written in PDF format)
 
-.         * parental background
+
+
+.         * PARENTAL BACKGROUND
 .         use `temp',clear
 (Monitoring the Future: A Continuing Study of American Youth (8th- and 10th-Grade)
 
