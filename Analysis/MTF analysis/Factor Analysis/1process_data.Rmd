@@ -1,0 +1,256 @@
+---
+title: "1process_data"
+author: "Bryan Kim"
+date: "12/22/2020"
+output: pdf_document
+---
+```{r}
+library(haven)
+library(dplyr)
+library(plyr)
+library(ggplot2)
+library(fastDummies)
+```
+
+# process and mutate things 2014-2017
+```{r}
+for (yr in c(2014, 2015, 2016, 2017))  {
+    df=read_dta(paste("/homes/nber/kimcwa/Documents/E-cigarettes/MTF_Data/Process/Data/MTF_",yr,"_8th.dta",sep=""))
+  df=rbind.fill(df,read_dta(paste("/homes/nber/kimcwa/Documents/E-cigarettes/MTF_Data/Process/Data/MTF_",yr,"_10th.dta",sep="")))
+  
+  df = df %>% mutate(hw_lkly_go_clg = V7225)
+    df = df %>% mutate(hw_lkly_grd_clg = V7226)
+    df = df %>% mutate(future_hopeless = V8509)
+    df = df %>% mutate(future_life = V8536)
+    df = df %>% mutate(life_not_useful = V8513)
+    ## future_hopeless future_life life_not_useful hw_lkly_go_clg hw_lkly_grd_clg
+    
+    # social media savvy
+    df = df %>% mutate(hrw_internet = V7551)
+    df = df %>% mutate(hrw_social_net = V7589)
+    df = df %>% mutate(hrw_text = V7562)
+    df = df %>% mutate(hrw_call = V7563)
+    df = df %>% mutate(hrw_video_chat = V7590)
+    ## hr_internet hr_social_net  hr_text hr_call hw_video_chat
+    
+    df = df %>% mutate(feduc = V7215)
+    df = df %>% mutate(meduc = V7216)
+    
+    df$hrw_internet[df$hrw_internet < 0] = NA 
+    df$hrw_social_net[df$hrw_social_net < 0] = NA 
+    df$hrw_text[df$hrw_text < 0] = NA
+    df$hrw_call[df$hrw_call < 0] = NA 
+    df$hrw_video_chat[df$hrw_video_chat < 0] = NA
+    
+    write_dta(df,paste("/homes/nber/kimcwa/Documents/E-cigarettes/MTF_Data/Process/Data/MTF_",yr,"_810th_FA.dta",sep=""))
+  
+
+}
+``` 
+
+# process and mutate things 2018-2019
+```{r}
+for (yr in c(2018, 2019))  {
+  df=read_dta(paste("/homes/nber/kimcwa/Documents/E-cigarettes/MTF_Data/Process/Data/MTF_",yr,"_8th.dta",sep=""))
+  df=rbind.fill(df,read_dta(paste("/homes/nber/kimcwa/Documents/E-cigarettes/MTF_Data/Process/Data/MTF_",yr,"_10th.dta",sep="")))
+  
+ # future outlook
+    df = df %>% mutate(hw_lkly_go_clg = V7225)
+    df = df %>% mutate(hw_lkly_grd_clg = V7226)
+    df = df %>% mutate(future_hopeless = V8509)
+    df = df %>% mutate(future_life = V8536)
+    df = df %>% mutate(life_not_useful = V8513)
+    ## future_hopeless future_life life_not_useful hw_lkly_go_clg hw_lkly_grd_clg
+    
+    # social media savvy
+    ## not the questions changed to hours/day from hours/week
+    #df = df %>% mutate(hr_internet = V7551)
+    df = df %>% mutate(hrd_social_net = V7685)
+    df = df %>% mutate(hrd_text = V7683)
+    df = df %>% mutate(hrd_call = V7684)
+    df = df %>% mutate(hrd_video_chat = V7686)
+    ## hr_internet hr_social_net  hr_text hr_call hw_video_chat
+    
+    df = df %>% mutate(feduc = V7215)
+    df = df %>% mutate(meduc = V7216)
+    
+    # df$hr_internet[df$hr_internet < 0] = NA
+    df$hrd_social_net[df$hrd_social_net < 0] = NA
+    df$hrd_text[df$hrd_text < 0] = NA
+    df$hrd_call[df$hrd_call < 0] = NA
+    df$hrd_video_chat[df$hrd_video_chat < 0] = NA
+    
+    write_dta(df,paste("/homes/nber/kimcwa/Documents/E-cigarettes/MTF_Data/Process/Data/MTF_",yr,"_810th_FA.dta",sep=""))
+}
+```
+
+# read in 2013-2019 data
+```{r}
+df2013 = read_dta(paste("/homes/nber/kimcwa/Documents/E-cigarettes/MTF_Data/Process/Data/MTF_",2013,"_810th_FA.dta",sep="")) %>% dplyr::rename(sex=V7202,race=V1070,where_live_now=V7205,grade_perf=V7221,large_msa=V508,msa=V509,school_region=V507)
+for (yr in c(2014,2015,2016,2017,2018,2019)) {
+  assign(paste("df",yr,sep=""),read_dta(paste("/homes/nber/kimcwa/Documents/E-cigarettes/MTF_Data/Process/Data/MTF_",yr,"_810th_FA.dta",sep="")))
+}
+
+# summarize
+table(df$hrw_internet,df$V1,useNA="ifany")
+table(df$hrw_social_net,df$V1,useNA="ifany")
+table(df$hrw_text,df$V1,useNA="ifany")
+table(df$hrw_call,df$V1,useNA="ifany")
+table(df$hrw_internet,df$V1,useNA="ifany")
+
+l = list(df2013,df2014,df2015,df2016,df2017)
+a = list(df2018,df2019)
+lapply(l, function(x) {print(table(x$hrw_internet,x$V1,useNA="ifany"))})
+lapply(l, function(x) {print(table(x$hrw_social_net,x$V1,useNA="ifany"))})
+lapply(l, function(x) {print(table(x$hrw_text,x$V1,useNA="ifany"))})
+lapply(l, function(x) {print(table(x$hrw_call,x$V1,useNA="ifany"))})
+lapply(l, function(x) {print(table(x$hrw_video_chat,x$V1,useNA="ifany"))})
+
+lapply(a, function(x) {print(table(x$hrd_social_net,x$V1,useNA="ifany"))})
+lapply(a, function(x) {print(table(x$hrd_text,x$V1,useNA="ifany"))})
+lapply(a, function(x) {print(table(x$hrd_call,x$V1,useNA="ifany"))})
+lapply(a, function(x) {print(table(x$hrd_video_chat,x$V1,useNA="ifany"))})
+
+```
+
+# Create variables and harmonize into same names where possible
+
+```{r}
+# Factor analysis for groups future outlook and social media savvy
+## 8th/10th GRADE
+for (yr in c(2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019))  {
+  df=read_dta(paste("/homes/nber/kimcwa/Documents/E-cigarettes/MTF_Data/Process/Data/MTF_",yr,"_8th.dta",sep=""))
+  df=rbind.fill(df,read_dta(paste("/homes/nber/kimcwa/Documents/E-cigarettes/MTF_Data/Process/Data/MTF_",yr,"_10th.dta",sep="")))
+  
+  # if (yr == 2011) {
+  #   # future outlook
+  #   df = df %>% mutate(hw_lkly_go_clg = V1227)
+  #   df = df %>% mutate(hw_lkly_grd_clg = V1278)
+  #   df = df %>% mutate(future_hopeless = V8509)
+  #   df = df %>% mutate(future_life = V8536)
+  #   df = df %>% mutate(life_not_useful = V8513)
+  #   ## future_hopeless future_life life_not_useful hw_lkly_go_clg hw_lkly_grd_clg
+  #   
+  #   # social media savvy
+  #   df = df %>% mutate(hrw_internet = V7551)
+  #   df = df %>% mutate(hrw_social_net = V7589)
+  #   df = df %>% mutate(hrw_text = V7562)
+  #   df = df %>% mutate(hrw_call = V7563)
+  #   #df = df %>% mutate(hrw_video_chat = V7590)
+  #   ## hr_internet hr_social_net  hr_text hr_call hw_video_chat
+  # }
+  if (yr == 2012) {
+    # future outlook
+    df = df %>% mutate(hw_lkly_go_clg = V7225)
+    df = df %>% mutate(hw_lkly_grd_clg = V7226)
+    df = df %>% mutate(future_hopeless = V8509)
+    df = df %>% mutate(future_life = V8536)
+    df = df %>% mutate(life_not_useful = V8513)
+    ## future_hopeless future_life life_not_useful hw_lkly_go_clg hw_lkly_grd_clg
+    
+    # social media savvy
+    df = df %>% mutate(hrw_internet = V7551)
+    df = df %>% mutate(hrw_social_net = V7552)
+    df = df %>% mutate(hrw_text = V7562)
+    df = df %>% mutate(hrw_call = V7563)
+    #df = df %>% mutate(hrw_video_chat = V7590)
+    ## hr_internet hr_social_net  hr_text hr_call hw_video_chat
+    
+    df = df %>% mutate(feduc = V7215)
+    df = df %>% mutate(meduc = V7216)
+    
+    df$hrw_internet[df$hrw_internet < 0] = NA 
+    df$hrw_social_net[df$hrw_social_net < 0] = NA 
+    df$hrw_text[df$hrw_text < 0] = NA
+    df$hrw_call[df$hrw_call < 0] = NA 
+  }
+  if (yr == 2013 |  yr == 2014 |  yr == 2015 |  yr == 2016 |  yr == 2017) {
+    # future outlook
+    df = df %>% mutate(hw_lkly_go_clg = V7225)
+    df = df %>% mutate(hw_lkly_grd_clg = V7226)
+    df = df %>% mutate(future_hopeless = V8509)
+    df = df %>% mutate(future_life = V8536)
+    df = df %>% mutate(life_not_useful = V8513)
+    ## future_hopeless future_life life_not_useful hw_lkly_go_clg hw_lkly_grd_clg
+    
+    # social media savvy
+    df = df %>% mutate(hrw_internet = V7551)
+    df = df %>% mutate(hrw_social_net = V7589)
+    df = df %>% mutate(hrw_text = V7562)
+    df = df %>% mutate(hrw_call = V7563)
+    df = df %>% mutate(hrw_video_chat = V7590)
+    ## hr_internet hr_social_net  hr_text hr_call hw_video_chat
+    
+    df = df %>% mutate(feduc = V7215)
+    df = df %>% mutate(meduc = V7216)
+    
+    df$hrw_internet[df$hrw_internet < 0] = NA 
+    df$hrw_social_net[df$hrw_social_net < 0] = NA 
+    df$hrw_text[df$hrw_text < 0] = NA
+    df$hrw_call[df$hrw_call < 0] = NA 
+    df$hrw_video_chat[df$hrw_video_chat < 0] = NA
+  }
+  if (yr == 2018 | yr == 2019) {
+    # future outlook
+    df = df %>% mutate(hw_lkly_go_clg = V7225)
+    df = df %>% mutate(hw_lkly_grd_clg = V7226)
+    df = df %>% mutate(future_hopeless = V8509)
+    df = df %>% mutate(future_life = V8536)
+    df = df %>% mutate(life_not_useful = V8513)
+    ## future_hopeless future_life life_not_useful hw_lkly_go_clg hw_lkly_grd_clg
+    
+    # social media savvy
+    ## not the questions changed to hours/day from hours/week
+    #df = df %>% mutate(hr_internet = V7551)
+    df = df %>% mutate(hrw_social_net = V7685)
+    df = df %>% mutate(hrw_text = V7683)
+    df = df %>% mutate(hrw_call = V7684)
+    df = df %>% mutate(hrw_video_chat = V7686)
+    ## hr_internet hr_social_net  hr_text hr_call hw_video_chat
+    
+    df = df %>% mutate(feduc = V7215)
+    df = df %>% mutate(meduc = V7216)
+    
+    # df$hr_internet[df$hr_internet < 0] = NA
+    df$hrw_social_net[df$hrw_social_net < 0] = NA
+    df$hrw_text[df$hrw_text < 0] = NA
+    df$hrw_call[df$hrw_call < 0] = NA
+    df$hrw_video_chat[df$hrw_video_chat < 0] = NA
+  }
+  
+  # higher number is worse
+  df$hw_lkly_go_clg[df$hw_lkly_go_clg == 1] = 5
+  df$hw_lkly_go_clg[df$hw_lkly_go_clg == 2] = 6
+  df$hw_lkly_go_clg[df$hw_lkly_go_clg == 3] = 7
+  df$hw_lkly_go_clg[df$hw_lkly_go_clg == 4] = 8
+  df$hw_lkly_go_clg[df$hw_lkly_go_clg == 5] = 4
+  df$hw_lkly_go_clg[df$hw_lkly_go_clg == 6] = 3
+  df$hw_lkly_go_clg[df$hw_lkly_go_clg == 7] = 2
+  df$hw_lkly_go_clg[df$hw_lkly_go_clg == 8] = 1
+  df$hw_lkly_grd_clg[df$hw_lkly_grd_clg == 1] = 5
+  df$hw_lkly_grd_clg[df$hw_lkly_grd_clg == 2] = 6
+  df$hw_lkly_grd_clg[df$hw_lkly_grd_clg == 3] = 7
+  df$hw_lkly_grd_clg[df$hw_lkly_grd_clg == 4] = 8
+  df$hw_lkly_grd_clg[df$hw_lkly_grd_clg == 5] = 4
+  df$hw_lkly_grd_clg[df$hw_lkly_grd_clg == 6] = 3
+  df$hw_lkly_grd_clg[df$hw_lkly_grd_clg == 7] = 2
+  df$hw_lkly_grd_clg[df$hw_lkly_grd_clg == 8] = 1
+  
+  df$future_hopeless[df$future_hopeless <0] = NA
+  df$future_life[df$future_life <0] = NA
+  df$life_not_useful[df$life_not_useful <0 ] = NA 
+  df$hw_lkly_go_clg[df$hw_lkly_go_clg <0 ] = NA 
+  df$hw_lkly_grd_clg[df$hw_lkly_grd_clg < 0] = NA 
+  # df$hr_internet[df$hr_internet < 0] = NA
+  # df$hr_social_net[df$hr_social_net < 0] = NA
+  # df$hr_text[df$hr_text < 0] = NA
+  # df$hr_call[df$hr_call < 0] = NA
+  # df$hw_video_chat[df$hw_video_chat < 0] = NA
+  df$meduc[df$meduc < 0 | df$meduc == 7] = NA 
+  df$feduc[df$feduc < 0 | df$feduc == 7] = NA 
+  
+  write_dta(df,paste("/homes/nber/kimcwa/Documents/E-cigarettes/MTF_Data/Process/Data/MTF_",yr,"_810th_FA.dta",sep=""))
+  
+}
+print(table(df$hrw_internet,useNA = "ifany"))
+```

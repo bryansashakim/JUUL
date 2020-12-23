@@ -1,0 +1,275 @@
+---
+title: "2create_groups"
+author: "Bryan Kim"
+date: "12/22/2020"
+output: pdf_document
+---
+
+```{r}
+library(haven)
+library(dplyr)
+library(plyr)
+library(ggplot2)
+library(fastDummies)
+```
+
+# create social media savvy groups
+```{r}
+# From David:
+# Assign each value the mid-point of the range. E.g., if “2-3”, assign 2.5.
+# Add up total hours / week on social networks, texting, and calling. Do the same for hours/day in 2018-19.
+# For each year, assign people in the top half of the distribution to be “high social” and those in the bottom half to be “low social”.
+# Plot the trends in ecigs for both.
+# Let’s also look at the demogrpahics for high social and low social: gender, region of country, parent education, etc.
+
+list_df1 = list(df2013,df2014,df2015,df2016,df2017)
+list_df2 = list(df2018,df2019)
+create_social_net_groups = function(social_net) {
+  if (isTRUE(social_net == 1)) {
+    return(social_net)
+  }
+  else if (isTRUE(social_net == 2)) {
+    return(social_net)
+  }
+  else if (isTRUE(social_net == 3)) {
+    return(2.5)
+  }
+  else if (isTRUE(social_net == 4)) {
+    return(4)
+  }
+  else if (isTRUE(social_net == 5)) {
+    return(7.5)
+  }
+  else if (isTRUE(social_net == 6)) {
+    return(14.5)
+  }
+  else if (isTRUE(social_net == 7)) {
+    return(24.5)
+  }
+  else if (isTRUE(social_net == 8)) {
+    return(34.5)
+  }
+  else if (isTRUE(social_net == 9)) {
+    return(social_net)
+  }
+  else {return(social_net)}
+}
+create_social_net_groups2 = function(social_net) {
+  if (isTRUE(social_net == 1)) {
+    return(social_net)
+  }
+  else if (isTRUE(social_net == 2)) {
+    return(social_net)
+  }
+  else if (isTRUE(social_net == 3)) {
+    return(2.5)
+  }
+  else if (isTRUE(social_net == 4)) {
+    return(3.5)
+  }
+  else if (isTRUE(social_net == 5)) {
+    return(5.5)
+  }
+  else if (isTRUE(social_net == 6)) {
+    return(7.5)
+  }
+  else if (isTRUE(social_net == 7)) {
+    return(social_net)
+  }
+  else {return(social_net)}
+}
+
+df2013$hrw_social_net = ifelse(df2013$hrw_social_net == 3,2.5,df2013$hrw_social_net)
+df2014$hrw_social_net = ifelse(df2014$hrw_social_net == 3,2.5,df2014$hrw_social_net)
+df2015$hrw_social_net = ifelse(df2015$hrw_social_net == 3,2.5,df2015$hrw_social_net)
+df2016$hrw_social_net = ifelse(df2016$hrw_social_net == 3,2.5,df2016$hrw_social_net)
+df2017$hrw_social_net = ifelse(df2017$hrw_social_net == 3,2.5,df2017$hrw_social_net)
+df2018$hrd_social_net = ifelse(df2018$hrd_social_net == 3,2.5,df2018$hrd_social_net)
+df2019$hrd_social_net = ifelse(df2019$hrd_social_net == 3,2.5,df2019$hrd_social_net)
+
+df2013$hrw_text = ifelse(df2013$hrw_text == 3,2.5,df2013$hrw_text)
+df2014$hrw_text = ifelse(df2014$hrw_text == 3,2.5,df2014$hrw_text)
+df2015$hrw_text = ifelse(df2015$hrw_text == 3,2.5,df2015$hrw_text)
+df2016$hrw_text = ifelse(df2016$hrw_text == 3,2.5,df2016$hrw_text)
+df2017$hrw_text = ifelse(df2017$hrw_text == 3,2.5,df2017$hrw_text)
+df2018$hrd_text = ifelse(df2018$hrd_text == 3,2.5,df2018$hrd_text)
+df2019$hrd_text = ifelse(df2019$hrd_text == 3,2.5,df2019$hrd_text)
+
+df2013$hrw_call = ifelse(df2013$hrw_call == 3,2.5,df2013$hrw_call)
+df2014$hrw_call = ifelse(df2014$hrw_call == 3,2.5,df2014$hrw_call)
+df2015$hrw_call = ifelse(df2015$hrw_call == 3,2.5,df2015$hrw_call)
+df2016$hrw_call = ifelse(df2016$hrw_call == 3,2.5,df2016$hrw_call)
+df2017$hrw_call = ifelse(df2017$hrw_call == 3,2.5,df2017$hrw_call)
+df2018$hrd_call = ifelse(df2018$hrd_call == 3,2.5,df2018$hrd_call)
+df2019$hrd_call = ifelse(df2019$hrd_call == 3,2.5,df2019$hrd_call)
+
+df2013$hrw_video_chat = ifelse(df2013$hrw_video_chat == 3,2.5,df2013$hrw_video_chat)
+df2014$hrw_video_chat = ifelse(df2014$hrw_video_chat == 3,2.5,df2014$hrw_video_chat)
+df2015$hrw_video_chat = ifelse(df2015$hrw_video_chat == 3,2.5,df2015$hrw_video_chat)
+df2016$hrw_video_chat = ifelse(df2016$hrw_video_chat == 3,2.5,df2016$hrw_video_chat)
+df2017$hrw_video_chat = ifelse(df2017$hrw_video_chat == 3,2.5,df2017$hrw_video_chat)
+df2018$hrd_video_chat = ifelse(df2018$hrd_video_chat == 3,2.5,df2018$hrd_video_chat)
+df2019$hrd_video_chat = ifelse(df2019$hrd_video_chat == 3,2.5,df2019$hrd_video_chat)
+
+df2013$fhrw_social_net = mapply(create_social_net_groups, df2013$hrw_social_net)
+df2014$fhrw_social_net = mapply(create_social_net_groups, df2014$hrw_social_net)
+df2015$fhrw_social_net = mapply(create_social_net_groups, df2015$hrw_social_net)
+df2016$fhrw_social_net = mapply(create_social_net_groups, df2016$hrw_social_net)
+df2017$fhrw_social_net = mapply(create_social_net_groups, df2017$hrw_social_net)
+df2018$fhrd_social_net = mapply(create_social_net_groups2, df2018$hrd_social_net)
+df2019$fhrd_social_net = mapply(create_social_net_groups2, df2019$hrd_social_net)
+
+df2013$fhrw_text = mapply(create_social_net_groups, df2013$hrw_text)
+df2014$fhrw_text = mapply(create_social_net_groups, df2014$hrw_text)
+df2015$fhrw_text = mapply(create_social_net_groups, df2015$hrw_text)
+df2016$fhrw_text = mapply(create_social_net_groups, df2016$hrw_text)
+df2017$fhrw_text = mapply(create_social_net_groups, df2017$hrw_text)
+df2018$fhrd_text = mapply(create_social_net_groups2, df2018$hrd_text)
+df2019$fhrd_text = mapply(create_social_net_groups2, df2019$hrd_text)
+
+df2013$fhrw_call = mapply(create_social_net_groups, df2013$hrw_call)
+df2014$fhrw_call = mapply(create_social_net_groups, df2014$hrw_call)
+df2015$fhrw_call = mapply(create_social_net_groups, df2015$hrw_call)
+df2016$fhrw_call = mapply(create_social_net_groups, df2016$hrw_call)
+df2017$fhrw_call = mapply(create_social_net_groups, df2017$hrw_call)
+df2018$fhrd_call = mapply(create_social_net_groups2, df2018$hrd_call)
+df2019$fhrd_call = mapply(create_social_net_groups2, df2019$hrd_call)
+
+df2013$fhrw_video_chat = mapply(create_social_net_groups, df2013$hrw_video_chat)
+df2014$fhrw_video_chat = mapply(create_social_net_groups, df2014$hrw_video_chat)
+df2015$fhrw_video_chat = mapply(create_social_net_groups, df2015$hrw_video_chat)
+df2016$fhrw_video_chat = mapply(create_social_net_groups, df2016$hrw_video_chat)
+df2017$fhrw_video_chat = mapply(create_social_net_groups, df2017$hrw_video_chat)
+df2018$fhrd_video_chat = mapply(create_social_net_groups2, df2018$hrd_video_chat)
+df2019$fhrd_video_chat = mapply(create_social_net_groups2, df2019$hrd_video_chat)
+
+add_social_media = function(a,b,c,d) {
+  rowSums(a,b,c,d,na.rm = TRUE)
+}
+# df2013$total_social = mapply(add_social_media, df2013$fhrw_social_net, df2013$fhrw_text, df2013$fhrw_call, df2013$fhrw_video_chat)
+# df2014$total_social = mapply(add_social_media, df2014$fhrw_social_net, df2014$fhrw_text, df2014$fhrw_call, df2014$fhrw_video_chat)
+# df2015$total_social = mapply(add_social_media, df2015$fhrw_social_net, df2015$fhrw_text, df2015$fhrw_call, df2015$fhrw_video_chat)
+# df2016$total_social = mapply(add_social_media, df2016$fhrw_social_net, df2016$fhrw_text, df2016$fhrw_call, df2016$fhrw_video_chat)
+# df2017$total_social = mapply(add_social_media, df2017$fhrw_social_net, df2017$fhrw_text, df2017$fhrw_call, df2017$fhrw_video_chat)
+# df2018$total_social = mapply(add_social_media, df2018$fhrd_social_net, df2018$fhrd_text, df2018$fhrd_call, df2018$fhrd_video_chat)
+# df2019$total_social = mapply(add_social_media, df2019$fhrd_social_net, df2019$fhrd_text, df2019$fhrd_call, df2019$fhrd_video_chat)
+
+df2013$total_social = rowSums(df2013[,c("fhrw_social_net", "fhrw_text","fhrw_call", "fhrw_video_chat")], na.rm=TRUE)
+df2014$total_social = rowSums(df2014[,c("fhrw_social_net", "fhrw_text","fhrw_call", "fhrw_video_chat")], na.rm=TRUE)
+df2015$total_social = rowSums(df2015[,c("fhrw_social_net", "fhrw_text","fhrw_call", "fhrw_video_chat")], na.rm=TRUE)
+df2016$total_social = rowSums(df2016[,c("fhrw_social_net", "fhrw_text","fhrw_call", "fhrw_video_chat")], na.rm=TRUE)
+df2017$total_social = rowSums(df2017[,c("fhrw_social_net", "fhrw_text","fhrw_call", "fhrw_video_chat")], na.rm=TRUE)
+df2018$total_social = rowSums(df2018[,c("fhrd_social_net", "fhrd_text","fhrd_call", "fhrd_video_chat")], na.rm=TRUE)
+df2019$total_social = rowSums(df2019[,c("fhrd_social_net", "fhrd_text","fhrd_call", "fhrd_video_chat")], na.rm=TRUE)
+
+# replace 0s in total_social with NAs to ignore average calc
+df2013$total_social[df2013$total_social == 0] = NA
+df2014$total_social[df2014$total_social == 0] = NA
+df2015$total_social[df2015$total_social == 0] = NA
+df2016$total_social[df2016$total_social == 0] = NA
+df2017$total_social[df2017$total_social == 0] = NA
+df2018$total_social[df2018$total_social == 0] = NA
+df2019$total_social[df2019$total_social == 0] = NA
+
+df2013$avg_social_media = mean(df2013$total_social,na.rm=TRUE)
+df2014$avg_social_media = mean(df2014$total_social,na.rm=TRUE)
+df2015$avg_social_media = mean(df2015$total_social,na.rm=TRUE)
+df2016$avg_social_media = mean(df2016$total_social,na.rm=TRUE)
+df2017$avg_social_media = mean(df2017$total_social,na.rm=TRUE)
+df2018$avg_social_media = mean(df2018$total_social,na.rm=TRUE)
+df2019$avg_social_media = mean(df2019$total_social,na.rm=TRUE)
+
+df2013_highsocial = df2013 %>% filter(total_social > avg_social_media)
+df2014_highsocial = df2014 %>% filter(total_social > avg_social_media)
+df2015_highsocial = df2015 %>% filter(total_social > avg_social_media)
+df2016_highsocial = df2016 %>% filter(total_social > avg_social_media)
+df2017_highsocial = df2017 %>% filter(total_social > avg_social_media)
+df2018_highsocial = df2018 %>% filter(total_social > avg_social_media)
+df2019_highsocial = df2019 %>% filter(total_social > avg_social_media)
+
+df2013_lowsocial = df2013 %>% filter(total_social < avg_social_media)
+df2014_lowsocial = df2014 %>% filter(total_social < avg_social_media)
+df2015_lowsocial = df2015 %>% filter(total_social < avg_social_media)
+df2016_lowsocial = df2016 %>% filter(total_social < avg_social_media)
+df2017_lowsocial = df2017 %>% filter(total_social < avg_social_media)
+df2018_lowsocial = df2018 %>% filter(total_social < avg_social_media)
+df2019_lowsocial = df2019 %>% filter(total_social < avg_social_media)
+
+df2014_highsocial = df2014_highsocial %>% mutate(curr = ifelse(V7614 %in% c(2,3,4,5,6),1,0))
+df2015_highsocial = df2015_highsocial %>% mutate(curr = ifelse(V7614 %in% c(2,3,4,5,6),1,0))
+df2016_highsocial = df2016_highsocial %>% mutate(curr = ifelse(V7614 %in% c(2,3,4,5,6),1,0))
+df2017_highsocial = df2017_highsocial %>% mutate(curr = ifelse((V7651 %in% c(2,3,4,5,6,7)) | (V7657 %in% c(2,3,4,5,6,7)),1,0))
+df2018_highsocial = df2018_highsocial %>% mutate(curr = ifelse((V7651 %in% c(2,3,4,5,6,7)) | (V7657 %in% c(2,3,4,5,6,7)),1,0))
+df2019_highsocial = df2019_highsocial %>% mutate(curr = ifelse(V7763 %in% c(2,3,4,5,6),1,0))
+
+df2014_highsocial = df2014_highsocial %>% mutate(curr = ifelse(V7614 %in% c(2,3,4,5,6),1,0))
+df2014_lowsocial = df2014_lowsocial %>% mutate(curr = ifelse(V7614 %in% c(2,3,4,5,6),1,0))
+df2015_lowsocial = df2015_lowsocial %>% mutate(curr = ifelse(V7614 %in% c(2,3,4,5,6),1,0))
+df2016_lowsocial = df2016_lowsocial %>% mutate(curr = ifelse(V7614 %in% c(2,3,4,5,6),1,0))
+df2017_lowsocial = df2017_lowsocial %>% mutate(curr = ifelse((V7651 %in% c(2,3,4,5,6,7)) | (V7657 %in% c(2,3,4,5,6,7)),1,0))
+df2018_lowsocial = df2018_lowsocial %>% mutate(curr = ifelse((V7651 %in% c(2,3,4,5,6,7)) | (V7657 %in% c(2,3,4,5,6,7)),1,0))
+df2019_lowsocial = df2019_lowsocial %>% mutate(curr = ifelse(V7763 %in% c(2,3,4,5,6),1,0))
+
+df2013_highsocial = df2013_highsocial %>% mutate(social_med_group = 1)
+df2014_highsocial = df2014_highsocial %>% mutate(social_med_group = 1)
+df2015_highsocial = df2015_highsocial %>% mutate(social_med_group = 1)
+df2016_highsocial = df2016_highsocial %>% mutate(social_med_group = 1)
+df2017_highsocial = df2017_highsocial %>% mutate(social_med_group = 1)
+df2018_highsocial = df2018_highsocial %>% mutate(social_med_group = 1)
+df2019_highsocial = df2019_highsocial %>% mutate(social_med_group = 1)
+
+df2013_lowsocial = df2013_lowsocial %>% mutate(social_med_group = 2)
+df2014_lowsocial = df2014_lowsocial %>% mutate(social_med_group = 2)
+df2015_lowsocial = df2015_lowsocial %>% mutate(social_med_group = 2)
+df2016_lowsocial = df2016_lowsocial %>% mutate(social_med_group = 2)
+df2017_lowsocial = df2017_lowsocial %>% mutate(social_med_group = 2)
+df2018_lowsocial = df2018_lowsocial %>% mutate(social_med_group = 2)
+df2019_lowsocial = df2019_lowsocial %>% mutate(social_med_group = 2)
+
+# save these for now
+df2013_FA = rbind(df2013_highsocial,df2013_lowsocial)
+df2013_FA = dummy_cols(df2013_FA,select_columns = c("sex","race","where_live_now","grade_perf","large_msa","msa","school_region","meduc","feduc")) %>% 
+  select(-"race_-9",-"grade_perf_-9",-"sex_-9",-"feduc_-9",-"meduc_-9",-"where_live_now_-9")
+write_dta(df2013_FA,"/homes/nber/kimcwa/Documents/E-cigarettes/MTF_Data/Process/Data/df2013_FA.dta")
+df2014_FA = rbind(df2014_highsocial,df2014_lowsocial); write_dta(df2014_FA,"/homes/nber/kimcwa/Documents/E-cigarettes/MTF_Data/Process/Data/df2014_FA.dta")
+df2015_FA = rbind(df2015_highsocial,df2015_lowsocial); write_dta(df2015_FA,"/homes/nber/kimcwa/Documents/E-cigarettes/MTF_Data/Process/Data/df2015_FA.dta")
+df2016_FA = rbind(df2016_highsocial,df2016_lowsocial); write_dta(df2016_FA,"/homes/nber/kimcwa/Documents/E-cigarettes/MTF_Data/Process/Data/df2016_FA.dta")
+df2017_FA = rbind(df2017_highsocial,df2017_lowsocial); write_dta(df2017_FA,"/homes/nber/kimcwa/Documents/E-cigarettes/MTF_Data/Process/Data/df2017_FA.dta")
+df2018_FA = rbind(df2018_highsocial,df2018_lowsocial); write_dta(df2018_FA,"/homes/nber/kimcwa/Documents/E-cigarettes/MTF_Data/Process/Data/df2018_FA.dta")
+df2019_FA = rbind(df2019_highsocial,df2019_lowsocial); write_dta(df2019_FA,"/homes/nber/kimcwa/Documents/E-cigarettes/MTF_Data/Process/Data/df2019_FA.dta")
+
+## do factor analysis stuff in Stata
+
+## create e-cigarette trend variables
+df2014_highsocial = df2014_highsocial %>% filter(V7614 >= 1)
+df2015_highsocial = df2015_highsocial %>% filter(V7614 >= 1)
+df2016_highsocial = df2016_highsocial %>% filter(V7614 >= 1)
+df2017_highsocial = df2017_highsocial %>% filter(V7651 >= 1 & V7657 >= 1)
+df2018_highsocial = df2018_highsocial %>% filter(V7651 >= 1 & V7657 >= 1)
+df2019_highsocial = df2019_highsocial %>% filter(V7763 >= 1)
+
+df2014_lowsocial = df2014_lowsocial %>% filter(V7614 >= 1)
+df2015_lowsocial = df2015_lowsocial %>% filter(V7614 >= 1)
+df2016_lowsocial = df2016_lowsocial %>% filter(V7614 >= 1)
+df2017_lowsocial = df2017_lowsocial %>% filter(V7651 >= 1 & V7657 >= 1)
+df2018_lowsocial = df2018_lowsocial %>% filter(V7651 >= 1 & V7657 >= 1)
+df2019_lowsocial = df2019_lowsocial %>% filter(V7763 >= 1)
+
+
+
+## indicator for groups for high and low
+df2013_highsocial$high_social = 1
+df2014_highsocial$high_social = 1
+df2015_highsocial$high_social = 1
+df2016_highsocial$high_social = 1
+df2017_highsocial$high_social = 1
+df2018_highsocial$high_social = 1
+df2019_highsocial$high_social = 1
+df2013_lowsocial$high_social = 1
+df2014_lowsocial$high_social = 1
+df2015_lowsocial$high_social = 1
+df2016_lowsocial$high_social = 1
+df2017_lowsocial$high_social = 1
+df2018_lowsocial$high_social = 1
+df2019_lowsocial$high_social = 1
+```
