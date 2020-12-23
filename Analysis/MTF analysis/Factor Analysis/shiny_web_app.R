@@ -1,3 +1,6 @@
+library(shiny)
+library(dplyr)
+library(ggplot2)
 
 # Plot code
 weighted.mean(df2014_highsocial$curr,df2014_highsocial$V5)
@@ -37,3 +40,64 @@ plot = ggplot(df2,aes(x=V1,y=m,colour=group,shape=group)) +
   ggtitle("Cumulative Cases: Scenarios 1 and 2") +
   theme_minimal()
 plot
+
+
+########## EXAMPLE ##########
+
+name<-c("a","a","b","b","c","c")
+type<-c("red","blue","blue","green","green","orange")
+number<-c(30,20,42,16,23,62)
+cbind(name,type,number)->df
+as.data.frame(df)->df
+unique(df$name)->name
+unique(df$type)->type
+
+
+ui <- fluidPage(
+  sidebarLayout(
+    sidebarPanel(
+      selectInput(
+        inputId = "name",
+        label = "Year Selection",
+        choices = name,
+        selected = "a",
+        multiple = TRUE
+      ),
+      radioButtons(
+        inputId = "type",
+        label = "Group Select",
+        choices = type,
+        selected = "red"
+      )
+    ),
+    mainPanel(
+      plotOutput(
+        outputId = "graph"
+      )
+    )
+  )
+  
+)
+
+server <- function(input, output) {
+  
+  output$graph <- renderPlot({
+    
+    filtered <- 
+      df %>%
+      filter(name %in% input$name) %>%
+      filter(type == input$type)
+    
+    ggplot(filtered,aes(x=name,y=number)) + geom_bar(stat = "identity")
+    
+  })
+  
+  
+}
+
+shinyApp(ui = ui, server = server)
+
+
+
+
+
