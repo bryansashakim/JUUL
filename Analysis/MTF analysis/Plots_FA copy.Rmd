@@ -1,0 +1,117 @@
+---
+title: "plots"
+author: "Bryan Kim"
+date: "12/24/2020"
+output: pdf_document
+---
+
+###########################
+#####      PLOTS      #####
+###########################
+
+# Load data
+```{r}
+library(plyr);library(dplyr)
+library(haven)
+library(ggplot2)
+df2013=read_dta("/Users/bryankim/Documents/DC/JUUL/Analysis/MTF analysis/Factor Analysis/Data/df2013.dta")
+df2014=read_dta("/Users/bryankim/Documents/DC/JUUL/Analysis/MTF analysis/Factor Analysis/Data/df2014.dta")
+df2015=read_dta("/Users/bryankim/Documents/DC/JUUL/Analysis/MTF analysis/Factor Analysis/Data/df2015.dta")
+df2016=read_dta("/Users/bryankim/Documents/DC/JUUL/Analysis/MTF analysis/Factor Analysis/Data/df2016.dta")
+df2017=read_dta("/Users/bryankim/Documents/DC/JUUL/Analysis/MTF analysis/Factor Analysis/Data/df2017.dta")
+df2018=read_dta("/Users/bryankim/Documents/DC/JUUL/Analysis/MTF analysis/Factor Analysis/Data/df2018.dta")
+df2019=read_dta("/Users/bryankim/Documents/DC/JUUL/Analysis/MTF analysis/Factor Analysis/Data/df2019.dta")
+
+```
+# By race
+```{r}
+# 2014-2016: V7614, 2017-2018: V7651 and V7657, 2019: V7757,V7763,V7769
+# 8th Grade
+df2014_8plot = df2014 %>% filter(grade==8 & !(V7614 %in% c(-9,-8))) 
+df2015_8plot = df2015 %>% filter(grade==8 & !(V7614 %in% c(-9,-8)))
+df2016_8plot = df2016 %>% filter(grade==8 & !(V7614 %in% c(-9,-8)))
+df2017_8plot = df2017 %>% filter(grade==8 & !(V7651 %in% c(-9,-8) | V7657 %in% c(-9,-8)))
+df2018_8plot = df2018 %>% filter(grade==8 & !(V7651 %in% c(-9,-8) | V7657 %in% c(-9,-8)))
+df2019_8plot = df2019 %>% filter(grade==8 & !(V7763 %in% c(-9,-8) | V7769 %in% c(-9,-8)))
+
+# 10th Grade
+df2014_10plot = df2014 %>% filter(grade==10 & !(V7614 %in% c(-9,-8)))
+df2015_10plot = df2015 %>% filter(grade==10 & !(V7614 %in% c(-9,-8)))
+df2016_10plot = df2016 %>% filter(grade==10 & !(V7614 %in% c(-9,-8)))
+df2017_10plot = df2017 %>% filter(grade==10 & !(V7651 %in% c(-9,-8) | V7657 %in% c(-9,-8)))
+df2018_10plot = df2018 %>% filter(grade==10 & !(V7651 %in% c(-9,-8) | V7657 %in% c(-9,-8)))
+df2019_10plot = df2019 %>% filter(grade==10 & !(V7763 %in% c(-9,-8) | V7769 %in% c(-9,-8)))
+# 2014-2016: V2546, 2017-2018: V2575,V2569, 2019: V2582, V2588
+# 12th Grade
+df2014_12plot = df2014 %>% filter(grade==12 & !(V2546 %in% c(-9,-8) | is.na(V2546)))
+df2015_12plot = df2015 %>% filter(grade==12 & !(V2546 %in% c(-9,-8) | is.na(V2546)))
+df2016_12plot = df2016 %>% filter(grade==12 & !(V2546 %in% c(-9,-8) | is.na(V2546)))
+df2017_12plot = df2017 %>% filter(grade==12 & !(V2575 %in% c(-9,-8) | V2569 %in% c(-9,-8) | is.na(V2569) | is.na(V2575)))
+df2018_12plot = df2018 %>% filter(grade==12 & !(V2575 %in% c(-9,-8) | V2569 %in% c(-9,-8) | is.na(V2569) | is.na(V2575)))
+df2019_12plot = df2019 %>% filter(grade==12 & !(V2582 %in% c(-9,-8) | V2588 %in% c(-9,-8) | is.na(V2582) | is.na(V2588)))
+```
+
+# By geography
+```{r}
+
+```
+
+
+
+```{r}
+df1 = rbind.fill(df2014_8plot,df2015_8plot,df2016_8plot,df2017_8plot,df2018_8plot,df2019_8plot)
+df2 = rbind.fill(df2014_10plot,df2015_10plot,df2016_10plot,df2017_10plot,df2018_10plot,df2019_10plot)
+df3 = rbind.fill(df2014_12plot,df2015_12plot,df2016_12plot,df2017_12plot,df2018_12plot,df2019_12plot)
+
+#subset by group
+df_s1 = df1 %>% group_by(V1) %>% dplyr::summarize(m = weighted.mean(curr,V5))
+df_s2 = df2 %>% group_by(V1) %>% dplyr::summarize(m = weighted.mean(curr,V5))
+df_s3 = df3 %>% group_by(V1) %>% dplyr::summarize(m = weighted.mean(curr,V5))
+df_s1$group="group1"
+df_s2$group="group2"
+df_s3$group="group3"
+
+plot1 = ggplot(df_s1,aes(x=V1,y=m,colour=group,shape=group)) +
+  geom_line(size=0.42) +
+  scale_color_manual(labels=c("Group 1"),values=c("red")) +
+  xlim(2013, 2020)+ylim(0.02, 0.15) +
+  xlab("Year") +
+  ylab("% current e-cigarette smokers") +
+  ggtitle("8th Grade current e-cig trends") +
+  theme_minimal()
+plot1
+
+plot2 = ggplot(df_s2,aes(x=V1,y=m,colour=group,shape=group)) +
+  geom_line(size=0.42) +
+  scale_color_manual(labels=c("Group 1"),values=c("red")) +
+  xlim(2013, 2020)+ylim(0.05, 0.30) +
+  xlab("Year") +
+  ylab("% current e-cigarette smokers") +
+  ggtitle("10th Grade current e-cig trends") +
+  theme_minimal()
+plot2
+
+plot3 = ggplot(df_s3,aes(x=V1,y=m,colour=group,shape=group)) +
+  geom_line(size=0.42) +
+  scale_color_manual(labels=c("Group 1"),values=c("red")) +
+  xlim(2013, 2020)+ylim(0.09, 0.35) +
+  xlab("Year") +
+  ylab("% current e-cigarette smokers") +
+  ggtitle("12th Grade current e-cig trends") +
+  theme_minimal()
+plot3
+
+df = rbind.fill(df_s1,df_s2,df_s3)
+plot = ggplot(df,aes(x=V1,y=m,colour=group,shape=group)) +
+  geom_line(size=0.42) +
+  scale_color_manual(labels=c("8th Grade","10th Grade","12th Grade"),values=c("red","green","blue")) +
+  xlim(2014, 2019) +
+  xlab("Year") +
+  ylab("% current e-cigarette smokers") +
+  ggtitle("8th,10th,12th Grade current e-cigarette trends") +
+  theme_bw() +
+  theme(plot.title = element_text(hjust=0.50)) +
+  scale_y_continuous(labels = scales::percent,breaks=seq(0,0.50, 0.025))
+plot
+```
+
