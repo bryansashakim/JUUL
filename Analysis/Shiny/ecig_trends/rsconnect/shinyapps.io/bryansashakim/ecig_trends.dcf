@@ -1,0 +1,12 @@
+name: ecig_trends
+title: ecig_trends
+username:
+account: bryansashakim
+server: shinyapps.io
+hostUrl: https://api.shinyapps.io/v1
+appId: 3433587
+bundleId: 4037710
+url: https://bryansashakim.shinyapps.io/ecig_trends/
+when: 1609222664.72866
+asMultiple: FALSE
+asStatic: FALSE
